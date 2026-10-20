@@ -22,6 +22,25 @@ assert all(a['mime'] == 'font/woff2' for a in font_assets.values()) and len(font
 LINK = re.compile(r'<link href="https://fonts\.googleapis\.com/css2[^"]*" rel="stylesheet">')
 THUMB = re.compile(r'<template id="__bundler_thumbnail"([^>]*)>(.*?)</template>\s*', re.S)
 
+# Large images are downscaled and re-encoded as WebP at bundle time only; originals in source/uploads stay untouched.
+# value = max width in px (None = keep dimensions). Needs Pillow (pip install pillow).
+OPTIMIZE = {
+    'lod-progression-wall-v3.png': 2000,
+    'lod-progression-steel-noheading.png': 2000,
+    'lod-progression-hvac-noheading.png': 2000,
+    'pasted-1782902873235-0.png': 2000,
+    'scenario-a-centered.png': None,
+}
+WEBP_QUALITY = 90
+def optimize(data, max_w):
+    import io
+    from PIL import Image
+    im = Image.open(io.BytesIO(data)); im.load()
+    if max_w and im.width > max_w:
+        im = im.resize((max_w, round(im.height * max_w / im.width)), Image.LANCZOS)
+    out = io.BytesIO(); im.save(out, 'WEBP', quality=WEBP_QUALITY, method=6)
+    return out.getvalue(), 'image/webp'
+
 def b64(b): return base64.b64encode(b).decode()
 def bundle(name, out_name, title):
     s = open(f"{SRC}/{name}", encoding="utf-8").read()
@@ -41,7 +60,10 @@ def bundle(name, out_name, title):
         h = hashlib.sha1(data).hexdigest()
         if h in cache: return cache[h]
         u = str(uuid.uuid5(uuid.NAMESPACE_URL, h))
-        mime = {'.png': 'image/png', '.js': 'text/javascript', '.jpg': 'image/jpeg'}[os.path.splitext(p)[1]]
+        ext = os.path.splitext(p)[1]
+        mime = {'.png': 'image/png', '.js': 'text/javascript', '.jpg': 'image/jpeg'}[ext]
+        if os.path.basename(p) in OPTIMIZE:
+            data, mime = optimize(data, OPTIMIZE[os.path.basename(p)])
         payload = gzip.compress(data, 9, mtime=0) if gz else data
         manifest[u] = {"mime": mime, "compressed": gz, "data": b64(payload)}
         cache[h] = u
