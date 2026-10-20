@@ -54,8 +54,16 @@ Type: Montserrat 400–800 headings/labels, Source Sans 3 body 15px/1.7.
 ## Policy notice (all pages)
 Every cover (above the footer strip) and the index header carry: "With effect from 15 Oct 2026 All new projects shall be initiated in Revit 2026 unless there is Client requirement to use older versions." Keep it on any new page.
 
+## Publishing to the live site
+Live pages are flat bundled `.html` files at the repo root (GitHub Pages). Rebuild them from `source/*.dc.html` with:
+
+```bash
+python tools/bundle.py
+```
+
+The bundler reuses the loader and embedded fonts from the existing `HA ACC Guide.html` at the root, writes `index.html` (from `BIM Library.dc.html`) plus one flat file per page, and output is deterministic. Keep `Clash_Coordination_Matrix.xlsx` at the root next to the clash page. `HA BIM Standards Index.html` is a legacy copy of the old index and is no longer built.
+
 ## Known items for follow-up
-- Rename/copy `BIM Library.dc.html` to `index.html` at the site root.
 - Keep `Clash_Coordination_Matrix.xlsx` beside the clash page for the download link.
 - LOD and Sheet & Model Structure pages are heavy (large images); consider compressing.
 - Hosting: SharePoint needs custom scripting allowed to render HTML; alternatively Netlify + Cloudflare Access restricted to `@hopkins.ae`.
