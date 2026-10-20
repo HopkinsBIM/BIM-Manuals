@@ -61,7 +61,7 @@ Live pages are flat bundled `.html` files at the repo root (GitHub Pages). Rebui
 python tools/bundle.py
 ```
 
-The bundler reuses the loader and embedded fonts from the existing `HA ACC Guide.html` at the root, writes `index.html` (from `BIM Library.dc.html`) plus one flat file per page, and output is deterministic. The five large images on the LOD and Sheet & Model Structure pages are downscaled to 2000 px wide (where wider) and re-encoded as WebP q90 at bundle time (see `OPTIMIZE` in `tools/bundle.py`; needs `pip install pillow`); the originals in `source/uploads/` are untouched. Those pages dropped from 25 MB and 13 MB to about 1.4 MB and 1.2 MB. Keep `Clash_Coordination_Matrix.xlsx` at the root next to the clash page. `HA BIM Standards Index.html` is a legacy copy of the old index and is no longer built.
+The bundler reuses the loader and embedded fonts from the existing `HA ACC Guide.html` at the root, writes `index.html` (from `BIM Library.dc.html`) plus one flat file per page, and output is deterministic. The five large images on the LOD and Sheet & Model Structure pages are downscaled to 2000 px wide (where wider) and re-encoded as WebP q90 at bundle time (see `OPTIMIZE` in `tools/bundle.py`; needs `pip install pillow`); the originals in `source/uploads/` are untouched. Those pages dropped from 25 MB and 13 MB to about 1.4 MB and 1.2 MB. Keep `Clash_Coordination_Matrix.xlsx` at the root next to the clash page.
 
 ## Known items for follow-up
 - Keep `Clash_Coordination_Matrix.xlsx` beside the clash page for the download link.
