@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#2A3142">
+  <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="600" fill="#2A3142"/>
+    <line x1="0" y1="100" x2="800" y2="100" stroke="white" stroke-width="0.5" opacity="0.1"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="white" stroke-width="0.5" opacity="0.1"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="white" stroke-width="0.5" opacity="0.1"/>
+    <line x1="0" y1="400" x2="800" y2="400" stroke="white" stroke-width="0.5" opacity="0.1"/>
+    <line x1="200" y1="0" x2="200" y2="600" stroke="white" stroke-width="0.5" opacity="0.1"/>
+    <line x1="400" y1="0" x2="400" y2="600" stroke="white" stroke-width="0.5" opacity="0.1"/>
+    <line x1="600" y1="0" x2="600" y2="600" stroke="white" stroke-width="0.5" opacity="0.1"/>
+    <rect x="80" y="220" width="48" height="4" rx="2" fill="#2568B8"/>
+    <rect x="80" y="248" width="380" height="22" rx="3" fill="white" opacity="0.9"/>
+    <rect x="80" y="280" width="280" height="22" rx="3" fill="white" opacity="0.7"/>
+    <rect x="80" y="360" width="220" height="10" rx="2" fill="#7EB8E8" opacity="0.7"/>
+    <circle cx="680" cy="120" r="100" fill="none" stroke="#4A90D9" stroke-width="1" opacity="0.2"/>
+    <circle cx="680" cy="120" r="70" fill="none" stroke="#4A90D9" stroke-width="1" opacity="0.2"/>
+    <circle cx="680" cy="120" r="40" fill="none" stroke="#4A90D9" stroke-width="1" opacity="0.2"/>
+    <rect x="0" y="550" width="800" height="50" fill="black" opacity="0.2"/>
+    <rect x="80" y="560" width="10" height="10" rx="1" fill="#2568B8"/>
+    <rect x="96" y="560" width="10" height="10" rx="1" fill="#2568B8" opacity="0.6"/>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: #DDE4ED; font-family: 'Source Sans 3', sans-serif; }
+    .doc { max-width: 8.5in; margin: 0 auto; background: #fff; padding: 48px clamp(24px,5vw,0.75in) 72px; }
+    h1,h2,h3,h4 { font-family: 'Montserrat',sans-serif; text-wrap: balance; margin: 0; }
+    p, li { text-wrap: pretty; }
+    @media print {
+      html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      body { background: #fff; margin: 0; padding: 0; }
+      .doc { max-width: none; margin: 0; padding: 0.75in; box-shadow: none; }
+      h1,h2,h3,h4 { break-after: avoid; }
+      .step-block { break-inside: avoid; }
+    }
+  </style>
+</helmet>
+
+<!-- COVER -->
+<div style="min-height:100vh;background:#1B3558;display:flex;flex-direction:column;position:relative;overflow:hidden;font-family:'Montserrat',sans-serif;page-break-after:always;">
+  <svg style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.06;pointer-events:none;" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="g" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M 48 0 L 0 0 0 48" fill="none" stroke="white" stroke-width="0.6"></path></pattern></defs><rect width="100%" height="100%" fill="url(#g)"></rect></svg>
+  <svg style="position:absolute;right:-80px;top:-80px;width:400px;height:400px;opacity:0.1;pointer-events:none;" viewBox="0 0 400 400"><circle cx="200" cy="200" r="180" fill="none" stroke="#4A90D9" stroke-width="1"></circle><circle cx="200" cy="200" r="120" fill="none" stroke="#4A90D9" stroke-width="0.8"></circle><circle cx="200" cy="200" r="60" fill="none" stroke="#4A90D9" stroke-width="0.6"></circle><line x1="20" y1="200" x2="380" y2="200" stroke="#4A90D9" stroke-width="0.4"></line><line x1="200" y1="20" x2="200" y2="380" stroke="#4A90D9" stroke-width="0.4"></line></svg>
+  <div style="padding:36px 60px;display:flex;justify-content:space-between;align-items:center;z-index:1;">
+    <img src="uploads/Hopkins Architects Right Aligned_White.png" alt="Hopkins Architects" style="height:46px;">
+    <span style="color:rgba(255,255,255,0.35);font-size:11px;letter-spacing:1px;">Internal Document · Self-Help Guide</span>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:40px 60px 56px;z-index:1;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;"><div style="width:32px;height:2px;background:#2568B8;border-radius:1px;"></div><span style="color:#7EB8E8;font-size:10.5px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;">BIM / Revit · Self-Help Guide</span></div>
+    <div style="margin-bottom:28px;">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><rect width="56" height="56" rx="12" fill="rgba(37,104,184,0.3)"></rect><rect x="14" y="10" width="28" height="36" rx="3" fill="none" stroke="#7EB8E8" stroke-width="1.5"></rect><path d="M20 10 L20 6 L36 6 L36 10" fill="none" stroke="#7EB8E8" stroke-width="1.5" stroke-linejoin="round"></path><rect x="19" y="22" width="18" height="2" rx="1" fill="#7EB8E8" opacity="0.7"></rect><rect x="19" y="28" width="13" height="2" rx="1" fill="#7EB8E8" opacity="0.5"></rect><rect x="19" y="34" width="16" height="2" rx="1" fill="#7EB8E8" opacity="0.4"></rect></svg>
+    </div>
+    <h1 style="color:#fff;font-size:40px;font-weight:800;line-height:1.15;margin:0 0 18px;max-width:560px;">Starting a New<br>Revit Model</h1>
+    <p style="color:#B3B4B4;font-size:15px;line-height:1.65;margin:0 0 40px;max-width:500px;">Step-by-step guide for creating new Revit project files and central models using the Hopkins Architects standard templates and setup procedures.</p>
+    <div style="width:52px;height:3px;background:#2568B8;border-radius:2px;margin-bottom:44px;"></div>
+    <div style="display:flex;gap:48px;flex-wrap:wrap;">
+      <div><div style="color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:5px;">Prepared By</div><div style="color:#fff;font-size:14px;font-weight:500;">Prashanth Perumal · BIM Technologist</div></div>
+      <div><div style="color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:5px;">Date</div><div style="color:#fff;font-size:14px;font-weight:500;">November 2025</div></div>
+      <div><div style="color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:5px;">Version History</div><div style="color:#fff;font-size:14px;font-weight:500;">Version 1.0</div></div>
+    </div>
+
+  <!-- Version History -->
+  <div style="margin-top:28px;border-radius:6px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);">
+    <div style="background:rgba(255,255,255,0.08);padding:8px 16px;">
+      <span style="font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.4);letter-spacing:1.5px;text-transform:uppercase;">Version History</span>
+    </div>
+    <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(255,255,255,0.05);">
+      <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Ver</div>
+      <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Date</div>
+      <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Description</div>
+      <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Status</div>
+    </div>
+    <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(37,104,184,0.15);">
+      <div style="padding:7px 12px;font-size:12px;font-weight:700;color:#7EB8E8;">1.0</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.7);">Nov 2025</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.7);">Initial release — Starting a New Revit Model</div>
+      <div style="padding:7px 12px;display:flex;align-items:center;gap:6px;"><div style="width:6px;height:6px;background:#4ADE80;border-radius:50%;"></div><span style="font-size:11px;font-weight:600;color:#4ADE80;">Current</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(0,0,0,0.1);border-top:1px solid rgba(255,255,255,0.05);">
+      <div style="padding:7px 12px;font-size:12px;font-weight:700;color:rgba(255,255,255,0.3);">—</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.3);">—</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.3);">Draft</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.25);">Superseded</div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Revit 2026 notice -->
+  <div style="background:rgba(37,104,184,0.22);border-top:1px solid rgba(126,184,232,0.3);padding:12px 60px;z-index:1;display:flex;align-items:center;gap:12px;font-family:'Montserrat',sans-serif;">
+    <span style="flex-shrink:0;color:#1B3558;background:#7EB8E8;font-size:9.5px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border-radius:3px;">Notice</span>
+    <span style="color:#fff;font-size:12.5px;font-weight:500;line-height:1.5;">With effect from 15 Oct 2026 All new projects shall be initiated in Revit 2026 unless there is Client requirement to use older versions.</span>
+  </div>
+
+  <div style="background:rgba(0,0,0,0.2);padding:14px 60px;z-index:1;display:flex;align-items:center;gap:12px;">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="7" height="7" rx="1" fill="#2568B8"></rect><rect x="10" y="1" width="7" height="7" rx="1" fill="#2568B8" opacity="0.5"></rect><rect x="1" y="10" width="7" height="7" rx="1" fill="#2568B8" opacity="0.5"></rect><rect x="10" y="10" width="7" height="7" rx="1" fill="#2568B8" opacity="0.3"></rect></svg>
+    <span style="color:rgba(255,255,255,0.35);font-size:11px;">Hopkins Architects Dubai Limited · BIM Standards Library</span>
+  </div>
+</div>
+
+<!-- BODY -->
+<main class="doc">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;margin-bottom:36px;border-bottom:2px solid #2A3142;">
+    <span style="font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#1B3558;letter-spacing:1.5px;text-transform:uppercase;">Starting a New Revit Model</span>
+    <span style="font-family:'Montserrat',sans-serif;font-size:10.5px;color:#827C78;">Prashanth Perumal · Version 1.0</span>
+  </div>
+
+  <!-- Phase 1 -->
+  
+
+  <!-- Phase 2: Creating a new file -->
+  <section style="margin-bottom:44px;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      
+      
+    </div>
+    
+
+  </section><section style="margin-bottom:44px;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">1</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">Creating a New Project File</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+
+      <!-- Step 1 -->
+      <div class="step-block" style="display:flex;gap:14px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:16px 18px;">
+        <div style="width:26px;height:26px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;">1</span></div>
+        <div>
+          <p style="font-size:14px;line-height:1.65;color:#2C3E50;margin:0;"><strong>Open Revit</strong> — launch Revit 2026 (or the office-standard version).</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-block" style="display:flex;flex-direction:column;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:16px 18px;">
+        <div style="display:flex;gap:14px;align-items:flex-start;">
+          <div style="width:26px;height:26px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;">2</span></div>
+          <p style="font-size:14px;line-height:1.65;color:#2C3E50;margin:0;">On the Revit start screen, click <strong>New…</strong> under the Models section (left panel). The <em>New Project</em> dialog will appear.</p>
+        </div>
+        <div style="margin-left:40px;">
+          <div style="border:2px solid #2568B8;border-radius:8px;overflow:hidden;width:50%;">
+            <img src="uploads/pasted-1782294559352-0.png" alt="Revit start screen — click New" style="width:100%;display:block;">
+          </div>
+          <p style="font-size:11.5px;color:#827C78;margin:6px 0 0;font-style:italic;">Revit 2026 start screen — click <strong>New…</strong> (highlighted in green) under Models in the left panel</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-block" style="display:flex;flex-direction:column;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:16px 18px;">
+        <div style="display:flex;gap:14px;align-items:flex-start;">
+          <div style="width:26px;height:26px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;">3</span></div>
+          <p style="font-size:14px;line-height:1.65;color:#2C3E50;margin:0;">In the <em>New Project</em> dialog, click <strong>Browse…</strong> next to the Template file field. Do not use the default Construction Template.</p>
+        </div>
+        <div style="margin-left:40px;">
+          <div style="border:2px solid #2568B8;border-radius:8px;overflow:hidden;width:50%;">
+            <img src="uploads/pasted-1782293198549-0.png" alt="New Project dialog — click Browse" style="width:100%;display:block;">
+          </div>
+          <p style="font-size:11.5px;color:#827C78;margin:6px 0 0;font-style:italic;">New Project dialog — click <strong>Browse…</strong> (highlighted in green) to navigate to the HA template location</p>
+        </div>
+      </div>
+
+      <!-- Note: use HA template -->
+      <div style="background:#FFF8EE;border:1px solid #E8C870;border-radius:7px;padding:14px 18px;display:flex;gap:10px;">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style="flex-shrink:0;margin-top:1px;"><circle cx="9" cy="9" r="8" fill="#C07A10"></circle><rect x="8.1" y="4" width="1.8" height="6" rx="0.9" fill="white"></rect><rect x="8.1" y="12" width="1.8" height="2" rx="0.9" fill="white"></rect></svg>
+        <p style="font-size:13.5px;line-height:1.65;color:#7A4A10;margin:0;"><strong>⚠ Caution:</strong> All new Revit files must be created using the <strong>latest HAD RVT Template</strong>. Never start from a blank Revit template or from a previous project file.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-block" style="display:flex;gap:14px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:16px 18px;">
+        <div style="width:26px;height:26px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;">4</span></div>
+        <div>
+          <p style="font-size:14px;line-height:1.65;color:#2C3E50;margin:0 0 10px;">In the file browser, navigate to the server template location:</p>
+          <div style="background:#1B3558;border-radius:6px;padding:10px 14px;display:inline-block;">
+            <code style="font-size:12.5px;color:#7EB8E8;letter-spacing:0.2px;">L:\04 BIM STANDARDS\02-Source Files and Templates\01-Revit Template</code>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="step-block" style="display:flex;gap:14px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:16px 18px;">
+        <div style="width:26px;height:26px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;">5</span></div>
+        <div>
+          <p style="font-size:14px;line-height:1.65;color:#2C3E50;margin:0;">Select the template file: <strong><code style="font-size:12.5px;background:#EEF3FA;padding:2px 6px;border-radius:3px;color:#2A3142;">HAD_Revit Project Template_V01(Base 2024).rte</code></strong> and click Open.</p>
+        </div>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="step-block" style="display:flex;flex-direction:column;gap:12px;background:#F2FBF4;border:1.5px solid #1F7A3B;border-radius:8px;padding:16px 18px;">
+        <div style="display:flex;gap:14px;align-items:flex-start;">
+          <div style="width:26px;height:26px;background:#1F7A3B;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;">6</span></div>
+          <p style="font-size:14px;line-height:1.65;color:#2A3142;margin:0;">Back in the <em>New Project</em> dialog, ensure the <strong>Project</strong> radio button is selected under "Create new" — then click <strong>OK</strong>.</p>
+        </div>
+        <div style="margin-left:40px;">
+          <div style="border:2px solid #1F7A3B;border-radius:8px;overflow:hidden;width:50%;">
+            <img src="uploads/pasted-1782293391269-0.png" alt="New Project dialog with HA template selected and Project radio button active" style="width:100%;display:block;">
+          </div>
+          <p style="font-size:11.5px;color:#1F7A3B;margin:6px 0 0;font-style:italic;font-weight:600;">Template field shows <strong>HAD_Revit Project Template_V01</strong> — ensure <strong>"Project"</strong> is selected, then click OK</p>
+        </div>
+      </div>
+
+      <!-- Cloud vs Server comparison -->
+      <h3 style="font-size:14px;font-weight:700;color:#1B3558;margin:8px 0 12px;">Cloud vs Server — When to Use Which</h3>
+      <div style="border:1px solid #D0DCE8;border-radius:8px;overflow:hidden;margin-bottom:4px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;background:#1B3558;">
+          <div style="padding:10px 14px;font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#B3B4B4;text-transform:uppercase;letter-spacing:0.5px;">Scenario</div>
+          <div style="padding:10px 14px;font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#B3B4B4;text-transform:uppercase;letter-spacing:0.5px;border-left:1px solid rgba(255,255,255,0.1);">Use Server</div>
+          <div style="padding:10px 14px;font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#B3B4B4;text-transform:uppercase;letter-spacing:0.5px;border-left:1px solid rgba(255,255,255,0.1);">Use ACC Cloud</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid #EDF1F7;background:#fff;">
+          <div style="padding:11px 14px;font-size:13px;color:#2C3E50;font-weight:600;">Team location</div>
+          <div style="padding:11px 14px;font-size:13px;color:#2C3E50;border-left:1px solid #EDF1F7;">All team in Dubai office</div>
+          <div style="padding:11px 14px;font-size:13px;color:#2C3E50;border-left:1px solid #EDF1F7;">Remote / multi-location team</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid #EDF1F7;background:#F8FAFC;">
+          <div style="padding:11px 14px;font-size:13px;color:#2C3E50;font-weight:600;">External consultants</div>
+          <div style="padding:11px 14px;font-size:13px;color:#2C3E50;border-left:1px solid #EDF1F7;">Not ideal (VPN required)</div>
+          <div style="padding:11px 14px;font-size:13px;color:#1F7A3B;font-weight:600;border-left:1px solid #EDF1F7;">✓ Best option</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid #EDF1F7;background:#F8FAFC;">
+          <div style="padding:11px 14px;font-size:13px;color:#2C3E50;font-weight:600;">ACC project admin needed</div>
+          <div style="padding:11px 14px;font-size:13px;color:#2C3E50;border-left:1px solid #EDF1F7;">No</div>
+          <div style="padding:11px 14px;font-size:13px;color:#2C3E50;border-left:1px solid #EDF1F7;">Yes — must be set up in ACC first</div>
+        </div>
+      </div>
+
+      <!-- Step 7 -->
+      <div class="step-block" style="display:flex;gap:14px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:16px 18px;">
+        <div style="width:26px;height:26px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;">7</span></div>
+        <div><p style="font-size:14px;line-height:1.65;color:#2C3E50;margin:0;">Immediately <strong>Save As → Project</strong> using the correct HA naming convention: <code style="font-size:12.5px;background:#EEF3FA;padding:2px 6px;border-radius:3px;color:#2A3142;">PXXX-HAD-M3-A-000001.rvt</code>. Save to: <code style="font-size:12.5px;background:#EEF3FA;padding:2px 6px;border-radius:3px;color:#2A3142;">PROJECT FOLDER → 02-DRAWING → 02-REVIT → [Stage] → 01_Geometry Model</code></p></div>
+      </div>
+
+      <!-- Step 7a: Save to ACC -->
+      <div class="step-block" style="display:flex;flex-direction:column;gap:12px;background:#EEF3FA;border:1.5px solid #2568B8;border-radius:8px;padding:16px 18px;">
+        <div style="display:flex;gap:14px;align-items:flex-start;">
+          <div style="width:26px;height:26px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:9px;font-weight:700;">7a</span></div>
+          <div>
+            <p style="font-size:14px;line-height:1.65;color:#2A3142;margin:0 0 10px;font-weight:600;">Saving a Model to Autodesk Construction Cloud (ACC)</p>
+            <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0 0 10px;">Revit models can be saved directly to ACC using <strong>Revit’s built-in cloud collaboration tools</strong>. This enables real-time worksharing via the cloud without relying on a VPN or server connection. Use this workflow when collaborating with remote team members or external consultants.</p>
+            <div style="background:#FFF8EE;border:1px solid #E8C870;border-radius:6px;padding:10px 14px;margin-bottom:12px;display:flex;gap:9px;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;margin-top:1px;"><circle cx="8" cy="8" r="7.5" fill="#C07A10"></circle><rect x="7.1" y="3.5" width="1.8" height="5.5" rx="0.9" fill="white"></rect><rect x="7.1" y="11" width="1.8" height="1.8" rx="0.9" fill="white"></rect></svg>
+              <p style="font-size:12.5px;line-height:1.65;color:#7A4A10;margin:0;"><strong>Prerequisite:</strong> You must have an active Autodesk account with access to the relevant ACC project, and the project must have <strong>Revit cloud worksharing</strong> enabled by the project admin in ACC.</p>
+            </div>
+            <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0 0 6px;">Go to <strong>File → Save As → Cloud Model</strong>, sign in with your Autodesk account, name the file following the HA naming convention (e.g. <code style="font-size:12px;background:#fff;padding:2px 5px;border-radius:3px;">PXXX-HAD-M3-A-000001</code>) and click <strong>Open</strong>. Revit will upload and convert it to a cloud-workshared central file.</p>
+          </div>
+        </div>
+        <div style="margin-left:40px;">
+          <div style="border:2px solid #C52E24;border-radius:7px;overflow:hidden;width:55%;">
+            <img src="uploads/pasted-1782305113236-0.png" alt="Revit File menu — Save As → Cloud Model" style="width:100%;display:block;">
+          </div>
+          <p style="font-size:11px;color:#8A9AB5;margin:5px 0 0;font-style:italic;">File menu → Save As → <strong>Cloud Model</strong> — saves the current model to ACC</p>
+        </div>
+        <div style="margin-left:40px;margin-top:4px;">
+          <p style="font-size:13px;line-height:1.65;color:#2C3E50;margin:0 0 6px;">Once uploaded, other team members open the model from ACC via <strong>Revit Home → Autodesk Forma</strong>. Synchronise using <strong>Collaborate tab → Synchronize with Central</strong> — same command as server-based. Changes push directly to ACC with no VPN required.</p>
+        </div>
+      </div>
+
+      <!-- Step 8 -->
+      <div class="step-block" style="display:flex;gap:14px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:16px 18px;">
+        <div style="width:26px;height:26px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;">8</span></div>
+        <div><p style="font-size:14px;line-height:1.65;color:#2C3E50;margin:0;">Update <strong>Project Information</strong> (Manage tab → Project Information) with the correct project name, number, address, client name, and project status before sharing the file with the team.</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Phase 3: Central file -->
+  <section style="margin-bottom:44px;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">2</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">Creating a Central (Workshared) File</h2>
+    </div>
+    <p style="font-size:14.5px;line-height:1.7;color:#2C3E50;margin:0 0 20px;">Create a central file only when <strong>2 or more users</strong> will collaborate on the same model, or when Worksets are needed to divide the model into sections.</p>
+
+    <!-- Enable Worksharing Steps -->
+    <h3 style="font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;color:#1B3558;margin:0 0 14px;">Steps to Enable Worksharing</h3>
+    <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
+
+      <div style="display:flex;gap:14px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:14px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">1</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Open the saved project file. Go to the <strong>Collaborate</strong> tab in the Revit ribbon.</p>
+      </div>
+
+      <div style="display:flex;gap:14px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:14px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">2</span></div>
+        <div>
+          <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0 0 8px;">In the <strong>Manage Collaboration</strong> panel, click <strong>Worksets</strong>. A prompt will appear asking to enable worksharing — click <strong>OK</strong>.</p>
+          <div style="border:2px solid #2568B8;border-radius:8px;overflow:hidden;max-width:480px;">
+            <img src="uploads/pasted-1782293892579-0.png" alt="Collaborate tab — Worksets button in Manage Collaboration panel" style="width:100%;display:block;">
+          </div>
+          <p style="font-size:11px;color:#8A9AB5;margin:5px 0 0;font-style:italic;">Collaborate tab → Manage Collaboration panel → <strong>Worksets</strong></p>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:14px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:14px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">3</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">In the Worksets dialog, the default worksets (<strong>Shared Levels and Grids</strong>, <strong>Workset1</strong>) are created automatically. Rename and add worksets as per the HA standard workset list in Section 4 below. Click <strong>OK</strong> when done.</p>
+      </div>
+
+      <!-- Caution note -->
+      <div style="background:#FFF8EE;border:1px solid #E8C870;border-radius:7px;padding:14px 18px;display:flex;gap:10px;">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style="flex-shrink:0;margin-top:1px;"><circle cx="9" cy="9" r="8" fill="#C07A10"></circle><rect x="8.1" y="4" width="1.8" height="6" rx="0.9" fill="white"></rect><rect x="8.1" y="12" width="1.8" height="2" rx="0.9" fill="white"></rect></svg>
+        <p style="font-size:13.5px;line-height:1.65;color:#7A4A10;margin:0;"><strong>⚠ Caution — Local files:</strong> When opening a central file, always open it via the Revit application (never via Windows Explorer) and select <strong>"Create New Local"</strong>. Local files should be stored in your C: drive and deleted weekly. Never save local files to the server.</p>
+      </div>
+
+      <div style="display:flex;gap:14px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:14px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">4</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Go to <strong>File → Save As → Project</strong>. In the Save As dialog, click <strong>Options…</strong> to open the File Save Options dialog — configure the settings in the table below before saving as a central file.</p>
+      </div>
+
+    </div>
+
+    <div style="border:1px solid #D0DCE8;border-radius:8px;overflow:hidden;margin-bottom:16px;">
+      <div style="background:#1B3558;padding:11px 16px;"><span style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#B3B4B4;text-transform:uppercase;letter-spacing:0.5px;">Required Save Options — Before Saving as Central</span></div>
+      <div style="display:grid;grid-template-columns:40px 1fr 2fr;background:#EEF3FA;">
+        <div style="padding:9px 12px;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:#827C78;text-transform:uppercase;">#</div>
+        <div style="padding:9px 12px;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:#827C78;text-transform:uppercase;border-left:1px solid #D0DCE8;">Setting</div>
+        <div style="padding:9px 12px;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:#827C78;text-transform:uppercase;border-left:1px solid #D0DCE8;">Value / Action</div>
+      </div>
+      <div style="display:grid;grid-template-columns:40px 1fr 2fr;border-top:1px solid #EDF1F7;background:#fff;">
+        <div style="padding:12px;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#2568B8;">1</div>
+        <div style="padding:12px;font-size:13.5px;font-weight:600;color:#1B3558;border-left:1px solid #EDF1F7;">Maximum Backups</div>
+        <div style="padding:12px;font-size:13.5px;color:#2C3E50;border-left:1px solid #EDF1F7;">Set to <strong>20</strong> — creates restore points in case of file corruption</div>
+      </div>
+      <div style="display:grid;grid-template-columns:40px 1fr 2fr;border-top:1px solid #EDF1F7;background:#F8FAFC;">
+        <div style="padding:12px;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#2568B8;">2</div>
+        <div style="padding:12px;font-size:13.5px;font-weight:600;color:#1B3558;border-left:1px solid #EDF1F7;">Make this a Central Model</div>
+        <div style="padding:12px;font-size:13.5px;color:#2C3E50;border-left:1px solid #EDF1F7;"><strong>Tick this box</strong> — makes the file independent from the original template</div>
+      </div>
+      <div style="display:grid;grid-template-columns:40px 1fr 2fr;border-top:1px solid #EDF1F7;background:#fff;">
+        <div style="padding:12px;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#2568B8;">3</div>
+        <div style="padding:12px;font-size:13.5px;font-weight:600;color:#1B3558;border-left:1px solid #EDF1F7;">Show Worksets dialog</div>
+        <div style="padding:12px;font-size:13.5px;color:#2C3E50;border-left:1px solid #EDF1F7;"><strong>Enable</strong> — prompts Workset selection each time the file is opened</div>
+      </div>
+      <div style="display:grid;grid-template-columns:40px 1fr 2fr;border-top:1px solid #EDF1F7;background:#F8FAFC;">
+        <div style="padding:12px;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#2568B8;">4</div>
+        <div style="padding:12px;font-size:13.5px;font-weight:600;color:#1B3558;border-left:1px solid #EDF1F7;">Thumbnail View</div>
+        <div style="padding:12px;font-size:13.5px;color:#2C3E50;border-left:1px solid #EDF1F7;">Assign a <strong>3D view</strong> as the thumbnail so users can identify the model when opening</div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Worksets -->
+  <section style="margin-bottom:44px;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">3</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">Standard Worksets to Create</h2>
+    </div>
+    <p style="font-size:14.5px;line-height:1.7;color:#2C3E50;margin:0 0 14px;">After creating a new file from the HAD template, create the following Worksets as a minimum:</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <div style="background:#F7F9FC;border:1px solid #D0DCE8;border-radius:6px;padding:10px 14px;"><div style="font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#1B3558;margin-bottom:3px;">00_Shared_Level_and_Grids</div><div style="font-size:12.5px;color:#5A6B7C;">Levels and Grids in Geometry Models</div></div>
+      <div style="background:#F7F9FC;border:1px solid #D0DCE8;border-radius:6px;padding:10px 14px;"><div style="font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#1B3558;margin-bottom:3px;">00_Reference_Planes</div><div style="font-size:12.5px;color:#5A6B7C;">All reference planes in Geometry and Sheets models</div></div>
+      <div style="background:#F7F9FC;border:1px solid #D0DCE8;border-radius:6px;padding:10px 14px;"><div style="font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#1B3558;margin-bottom:3px;">00_Enscape_Assets</div><div style="font-size:12.5px;color:#5A6B7C;">All Enscape / visualisation elements</div></div>
+      <div style="background:#F7F9FC;border:1px solid #D0DCE8;border-radius:6px;padding:10px 14px;"><div style="font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#1B3558;margin-bottom:3px;">01_Content_HA_Arch</div><div style="font-size:12.5px;color:#5A6B7C;">All Architectural and Interior design elements</div></div>
+      <div style="background:#F7F9FC;border:1px solid #D0DCE8;border-radius:6px;padding:10px 14px;"><div style="font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#1B3558;margin-bottom:3px;">02_Content_HA_Structure</div><div style="font-size:12.5px;color:#5A6B7C;">All Structural placeholder elements</div></div>
+      <div style="background:#F7F9FC;border:1px solid #D0DCE8;border-radius:6px;padding:10px 14px;"><div style="font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#1B3558;margin-bottom:3px;">02_Content_HA_MEP</div><div style="font-size:12.5px;color:#5A6B7C;">All MEP placeholder elements</div></div>
+    </div>
+    <p style="font-size:13px;color:#827C78;margin:10px 0 0;font-style:italic;">Refer to the HA BIM Manual for the full Workset list, including link and specialist discipline worksets.</p>
+  </section>
+
+  <!-- Synchronising Central Files -->
+  <section style="margin-bottom:44px;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">4</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">Synchronising Central Files — Recommended Procedure</h2>
+    </div>
+    <p style="font-size:14.5px;line-height:1.7;color:#2C3E50;margin:0 0 18px;">Follow this sequence every time you synchronise with the central file. Do not skip steps — each ensures other team members can access your changes and that the model stays clean.</p>
+    <div style="border:1px solid #D0DCE8;border-radius:8px;overflow:hidden;margin-bottom:16px;">
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);">
+        <div style="padding:16px 12px;background:#EEF3FA;text-align:center;border-right:1px solid #D0DCE8;">
+          <div style="width:30px;height:30px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">1</span></div>
+          <p style="font-size:12px;color:#2A3142;font-weight:600;margin:0 0 6px;font-family:'Montserrat',sans-serif;">Return to Splash Page</p>
+          <p style="font-size:11px;color:#8A9AB5;margin:0;line-height:1.5;">Navigate to the Landing Page view before syncing</p>
+        </div>
+        <div style="padding:16px 12px;background:#EEF3FA;text-align:center;border-right:1px solid #D0DCE8;">
+          <div style="width:30px;height:30px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">2</span></div>
+          <p style="font-size:12px;color:#2A3142;font-weight:600;margin:0 0 6px;font-family:'Montserrat',sans-serif;">Save Local File</p>
+          <p style="font-size:11px;color:#8A9AB5;margin:0;line-height:1.5;">Ctrl+S to save your local copy first</p>
+        </div>
+        <div style="padding:16px 12px;background:#EEF3FA;text-align:center;border-right:1px solid #D0DCE8;">
+          <div style="width:30px;height:30px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">3</span></div>
+          <p style="font-size:12px;color:#2A3142;font-weight:600;margin:0 0 6px;font-family:'Montserrat',sans-serif;">Reload Latest</p>
+          <p style="font-size:11px;color:#8A9AB5;margin:0;line-height:1.5;">Load latest changes from other users</p>
+        </div>
+        <div style="padding:16px 12px;background:#EEF3FA;text-align:center;border-right:1px solid #D0DCE8;">
+          <div style="width:30px;height:30px;background:#1F7A3B;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">4</span></div>
+          <p style="font-size:12px;color:#2A3142;font-weight:600;margin:0 0 6px;font-family:'Montserrat',sans-serif;">Sync &amp; Modify Settings</p>
+          <p style="font-size:11px;color:#8A9AB5;margin:0;line-height:1.5;">Use default sync settings — do not change options</p>
+        </div>
+        <div style="padding:16px 12px;background:#EEF3FA;text-align:center;">
+          <div style="width:30px;height:30px;background:#1F7A3B;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">5</span></div>
+          <p style="font-size:12px;color:#2A3142;font-weight:600;margin:0 0 6px;font-family:'Montserrat',sans-serif;">Relinquish All Mine</p>
+          <p style="font-size:11px;color:#8A9AB5;margin:0;line-height:1.5;">Release ownership so others can edit your elements</p>
+        </div>
+      </div>
+    </div>
+    <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:7px;padding:14px 18px;display:flex;gap:10px;">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;margin-top:1px;"><circle cx="8" cy="8" r="7.5" fill="#1F7A3B"></circle><path d="M4.5 8l2.5 2.5L11.5 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      <p style="font-size:13.5px;line-height:1.65;color:#2A3142;margin:0;"><strong>Sync frequency:</strong> Synchronise at minimum every 2 hours, or whenever completing a significant task. Always synchronise before leaving for the day.</p>
+    </div>
+  </section>
+
+  <!-- General Drawing Advice -->
+  <section style="margin-bottom:44px;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">5</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">General Drawing Advice</h2>
+    </div>
+
+    <div style="background:#FFF8EE;border-left:4px solid #C07A10;border-radius:0 8px 8px 0;padding:16px 20px;margin-bottom:22px;">
+      <p style="font-size:14.5px;line-height:1.7;color:#5A3A10;margin:0;font-style:italic;">"Managing a drawing can be thought of as engineering a high-speed car — it needs to be elegant but more importantly incredibly efficient. <strong>Never draw more than is needed</strong>, and always keep models and drawings as light and clean as possible."</p>
+    </div>
+
+    <h3 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 12px;">Model Performance Guidelines</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <div style="display:flex;gap:10px;align-items:flex-start;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:7px;padding:12px 14px;">
+        <div style="width:18px;height:18px;background:#C52E24;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-size:10px;font-weight:700;font-family:'Montserrat',sans-serif;">!</span></div>
+        <p style="font-size:13px;line-height:1.6;color:#2C3E50;margin:0;">Avoid over-complicated components; beware of web library families and manufacturer components</p>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:7px;padding:12px 14px;">
+        <div style="width:18px;height:18px;background:#C52E24;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-size:10px;font-weight:700;font-family:'Montserrat',sans-serif;">!</span></div>
+        <p style="font-size:13px;line-height:1.6;color:#2C3E50;margin:0;">Check warnings regularly and always aim to resolve them, especially duplicate object warnings</p>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:7px;padding:12px 14px;">
+        <div style="width:18px;height:18px;background:#C52E24;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-size:10px;font-weight:700;font-family:'Montserrat',sans-serif;">!</span></div>
+        <p style="font-size:13px;line-height:1.6;color:#2C3E50;margin:0;">Delete unused views; if created for checking, delete afterwards. Purge unused families regularly</p>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:7px;padding:12px 14px;">
+        <div style="width:18px;height:18px;background:#C52E24;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-size:10px;font-weight:700;font-family:'Montserrat',sans-serif;">!</span></div>
+        <p style="font-size:13px;line-height:1.6;color:#2C3E50;margin:0;">Always Link CAD files instead of importing; avoid linking large images or CAD files where possible</p>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:7px;padding:12px 14px;">
+        <div style="width:18px;height:18px;background:#C52E24;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-size:10px;font-weight:700;font-family:'Montserrat',sans-serif;">!</span></div>
+        <p style="font-size:13px;line-height:1.6;color:#2C3E50;margin:0;">Model In-Place families to a minimum — avoid for elements that repeat across the project</p>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:7px;padding:12px 14px;">
+        <div style="width:18px;height:18px;background:#C52E24;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-size:10px;font-weight:700;font-family:'Montserrat',sans-serif;">!</span></div>
+        <p style="font-size:13px;line-height:1.6;color:#2C3E50;margin:0;">Prefer Families over Groups; groups behave unexpectedly with hosted elements (doors, furniture)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing -->
+  <div style="background:linear-gradient(135deg,#2A3142 0%,#2568B8 100%);border-radius:10px;padding:22px 26px;">
+    <div style="display:flex;gap:14px;align-items:flex-start;">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" style="flex-shrink:0;margin-top:2px;"><circle cx="14" cy="14" r="12" fill="rgba(255,255,255,0.15)"></circle><path d="M8.5 14L12 17.5L19.5 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><p style="font-size:14px;line-height:1.68;color:rgba(255,255,255,0.9);margin:0;">For queries, contact <strong style="color: rgb(126, 184, 232);">prashanth.p@hopkins.ae</strong>.</p>
+      
+    </div>
+  </div>
+
+  <div style="border-top:1px solid #D0DCE8;padding-top:14px;margin-top:36px;display:flex;justify-content:space-between;align-items:center;">
+    <span style="font-family:'Montserrat',sans-serif;font-size:10.5px;color:#9AAABB;">Hopkins Architects · Internal Use Only</span>
+    <span style="font-family:'Montserrat',sans-serif;font-size:10.5px;color:#9AAABB;">Starting a New Revit Model · Version A</span>
+  </div>
+
+</main>
+</x-dc>
+</body>
+</html>

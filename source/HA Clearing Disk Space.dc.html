@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<template id="__bundler_thumbnail" data-bg-color="#2A3142">
+  <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="600" fill="#2A3142"></rect>
+    <rect x="250" y="140" width="300" height="200" rx="16" fill="rgba(37,104,184,0.3)" stroke="#2568B8" stroke-width="3"></rect>
+    <rect x="310" y="200" width="180" height="24" rx="4" fill="#2568B8" opacity="0.6"></rect>
+    <rect x="310" y="240" width="140" height="24" rx="4" fill="#2568B8" opacity="0.4"></rect>
+    <rect x="310" y="280" width="100" height="24" rx="4" fill="#2568B8" opacity="0.25"></rect>
+    <text x="400" y="430" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="22" font-family="sans-serif">Clearing Disk Space</text>
+  </svg>
+</template>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: #DDE4ED; font-family: 'Source Sans 3', sans-serif; }
+    .doc { max-width: 8.5in; margin: 0 auto; background: #fff; padding: 48px clamp(24px,5vw,0.75in) 72px; }
+    h1,h2,h3,h4 { font-family: 'Montserrat',sans-serif; text-wrap: balance; margin: 0; }
+    p, li { text-wrap: pretty; }
+    @media print {
+      html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      body { background: #fff; margin: 0; padding: 0; }
+      .doc { max-width: none; margin: 0; padding: 0.75in; box-shadow: none; }
+      h1,h2,h3,h4 { break-after: avoid; }
+    }
+  </style>
+</helmet>
+
+<!-- ═══════════ COVER PAGE ═══════════ -->
+<div style="min-height:100vh;background:#1B3558;display:flex;flex-direction:column;position:relative;overflow:hidden;font-family:'Montserrat',sans-serif;page-break-after:always;">
+
+  <!-- Blueprint grid background -->
+  <svg style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.07;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+        <path d="M 48 0 L 0 0 0 48" fill="none" stroke="white" stroke-width="0.6"></path>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+  </svg>
+
+  <!-- Top-right decorative rings -->
+  <svg style="position:absolute;top:-100px;right:-100px;width:480px;height:480px;opacity:0.12;" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="240" cy="240" r="220" fill="none" stroke="#4A90D9" stroke-width="1"></circle>
+    <circle cx="240" cy="240" r="160" fill="none" stroke="#4A90D9" stroke-width="0.8"></circle>
+    <circle cx="240" cy="240" r="100" fill="none" stroke="#4A90D9" stroke-width="0.6"></circle>
+    <circle cx="240" cy="240" r="40" fill="none" stroke="#4A90D9" stroke-width="0.5"></circle>
+    <line x1="20" y1="240" x2="460" y2="240" stroke="#4A90D9" stroke-width="0.4"></line>
+    <line x1="240" y1="20" x2="240" y2="460" stroke="#4A90D9" stroke-width="0.4"></line>
+    <line x1="84" y1="84" x2="396" y2="396" stroke="#4A90D9" stroke-width="0.4"></line>
+    <line x1="396" y1="84" x2="84" y2="396" stroke="#4A90D9" stroke-width="0.4"></line>
+  </svg>
+
+  <!-- Top bar -->
+  <div style="padding:36px 60px;display:flex;justify-content:space-between;align-items:center;z-index:1;">
+    <img src="uploads/Hopkins Architects Right Aligned_White.png" alt="Hopkins Architects" style="height:46px;">
+    <span style="color:rgba(255,255,255,0.35);font-size:11px;letter-spacing:1px;">Internal Document · IT / BIM Standards</span>
+  </div>
+
+  <!-- Main content -->
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:40px 60px 56px;z-index:1;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:28px;">
+      <div style="width:36px;height:2px;background:#2568B8;"></div>
+      <span style="color:#7EB8E8;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;">Practice · Information Technology</span>
+    </div>
+    <h1 style="color:#fff;font-size:44px;font-weight:800;line-height:1.13;margin:0 0 22px;max-width:620px;">Clearing Disk Space</h1>
+    <p style="color:#A8C8E8;font-size:16px;line-height:1.65;margin:0 0 44px;max-width:520px;font-weight:400;">Managing disk space on desktops<br>and laptops - general housekeeping<br>and Revit-specific clean-up</p>
+    <div style="width:56px;height:3px;background:#2568B8;border-radius:2px;margin-bottom:52px;"></div>
+    <div style="display:flex;gap:52px;flex-wrap:wrap;">
+      <div>
+        <div style="color:rgba(255,255,255,0.38);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Prepared By</div>
+        <div style="color:#fff;font-size:15px;font-weight:500;">Prashanth Perumal - BIM Technologist</div>
+      </div>
+      <div>
+        <div style="color:rgba(255,255,255,0.38);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Date</div>
+        <div style="color:#fff;font-size:15px;font-weight:500;">July 2026</div>
+      </div>
+      <div>
+        <div style="color:rgba(255,255,255,0.38);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Version History</div>
+        <div style="color:#fff;font-size:15px;font-weight:500;">Version 1.0</div>
+      </div>
+    </div>
+
+    <!-- Revision History -->
+    <div style="margin-top:28px;border-radius:6px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);">
+      <div style="background:rgba(255,255,255,0.08);padding:8px 16px;">
+        <span style="font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.4);letter-spacing:1.5px;text-transform:uppercase;">Version History</span>
+      </div>
+      <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(255,255,255,0.05);">
+        <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Ver</div>
+        <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Date</div>
+        <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Description</div>
+        <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Status</div>
+      </div>
+      <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(37,104,184,0.15);">
+        <div style="padding:7px 12px;font-size:12px;font-weight:700;color:#7EB8E8;">1.0</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.7);">Jul 2026</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.7);">Initial release — Clearing Disk Space Guide</div>
+        <div style="padding:7px 12px;display:flex;align-items:center;gap:6px;"><div style="width:6px;height:6px;background:#4ADE80;border-radius:50%;"></div><span style="font-size:11px;font-weight:600;color:#4ADE80;">Current</span></div>
+      </div>
+      <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(0,0,0,0.1);border-top:1px solid rgba(255,255,255,0.05);">
+        <div style="padding:7px 12px;font-size:12px;font-weight:700;color:rgba(255,255,255,0.3);">—</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.3);">—</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.3);">Draft</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.25);">Superseded</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Revit 2026 notice -->
+  <div style="background:rgba(37,104,184,0.22);border-top:1px solid rgba(126,184,232,0.3);padding:12px 60px;z-index:1;display:flex;align-items:center;gap:12px;font-family:'Montserrat',sans-serif;">
+    <span style="flex-shrink:0;color:#1B3558;background:#7EB8E8;font-size:9.5px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border-radius:3px;">Notice</span>
+    <span style="color:#fff;font-size:12.5px;font-weight:500;line-height:1.5;">With effect from 15 Oct 2026 All new projects shall be initiated in Revit 2026 unless there is Client requirement to use older versions.</span>
+  </div>
+
+  <div style="background:rgba(0,0,0,0.2);padding:14px 60px;z-index:1;display:flex;align-items:center;gap:12px;">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="7" height="7" rx="1" fill="#2568B8"></rect><rect x="10" y="1" width="7" height="7" rx="1" fill="#2568B8" opacity="0.5"></rect><rect x="1" y="10" width="7" height="7" rx="1" fill="#2568B8" opacity="0.5"></rect><rect x="10" y="10" width="7" height="7" rx="1" fill="#2568B8" opacity="0.3"></rect></svg>
+    <span style="color:rgba(255,255,255,0.35);font-size:11px;">Hopkins Architects Dubai Limited · BIM Standards Library</span>
+  </div>
+</div>
+
+<!-- ═══════════ DOCUMENT BODY ═══════════ -->
+<main class="doc">
+
+  <!-- Running header -->
+  <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;margin-bottom:36px;border-bottom:2px solid #2A3142;">
+    <span style="font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#1B3558;letter-spacing:1.5px;text-transform:uppercase;">Clearing Disk Space</span>
+    <span style="font-family:'Montserrat',sans-serif;font-size:10.5px;color:#827C78;letter-spacing:0.3px;">IT / BIM Team · July 2026</span>
+  </div>
+
+  <!-- Context callout -->
+  <div style="background:#EEF3FA;border-left:4px solid #2568B8;border-radius:0 8px 8px 0;padding:18px 22px;margin-bottom:36px;">
+    <p style="font-size:14.5px;line-height:1.72;color:#1B2E45;margin:0;">Our standard hard-drive specification is currently <strong>2 TB for desktops</strong> and <strong>1 TB for laptops</strong>, but many older machines have less. Through careful management they can still be used successfully. <strong>Revit in particular is hungry for space</strong> — there are several areas to keep an eye on if you are running short.</p>
+  </div>
+
+  <!-- How much space do I have? -->
+  <div style="background:#F8FAFC;border:1px solid #D0DCE8;border-radius:8px;padding:18px 22px;margin-bottom:36px;display:flex;gap:16px;align-items:flex-start;">
+    <div style="width:40px;height:40px;background:#1B3558;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" fill="none" stroke="white" stroke-width="1.5"></circle><path d="M10 6v4.5l3 1.5" stroke="white" stroke-width="1.5" stroke-linecap="round"></path></svg>
+    </div>
+    <div>
+      <h3 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 6px;">How much space do I have?</h3>
+      <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0;">Select <strong>This PC</strong> in Explorer, or right-click on <strong>C:/</strong> and choose <strong>Properties</strong> to see your current disk usage at a glance.</p>
+    </div>
+  </div>
+
+  <!-- Screenshot: Disk Properties -->
+  <div style="margin-bottom:36px;border:1px solid #D0DCE8;border-radius:8px;overflow:hidden;">
+    <div style="background:#F1F5F9;padding:8px 16px;border-bottom:1px solid #D0DCE8;">
+      <span style="font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:#827C78;letter-spacing:1px;text-transform:uppercase;">Right-click C:/ → Properties to check disk space</span>
+    </div>
+    <img src="uploads/pasted-1782883518429-0.png" alt="Right-click Local Disk C: and choose Properties to view disk space usage" style="width:100%;display:block;">
+  </div>
+
+  <!-- ═══ SECTION 1: GENERAL DISK CLEANUP ═══ -->
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+    <div style="width:44px;height:44px;background:#1B3558;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="3" width="16" height="16" rx="3" fill="none" stroke="white" stroke-width="1.5"></rect><line x1="8" y1="11" x2="14" y2="11" stroke="white" stroke-width="1.5" stroke-linecap="round"></line></svg>
+    </div>
+    <div>
+      <div style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#2568B8;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;">Section 1</div>
+      <h2 style="font-size:22px;font-weight:800;color:#1B3558;line-height:1.2;">General Disk Cleanup</h2>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:44px;">
+
+    <!-- Step 1 -->
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #D0DCE8;border-radius:8px;padding:16px 20px;">
+      <div style="width:28px;height:28px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+        <span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">1</span>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 6px;">Documents</h4>
+        <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0;">Check locally saved files and remove unneeded ones. Any business-critical information should be stored on the servers, not on your local drive.</p>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #D0DCE8;border-radius:8px;padding:16px 20px;">
+      <div style="width:28px;height:28px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+        <span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">2</span>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 6px;">Downloads &amp; Recycle Bin</h4>
+        <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0;">Clear your <strong>Downloads</strong> folder and empty the <strong>Recycle Bin</strong>. These are often the quickest wins.</p>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #D0DCE8;border-radius:8px;padding:16px 20px;">
+      <div style="width:28px;height:28px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+        <span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">3</span>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 6px;">Windows Disk Clean-up</h4>
+        <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0;">Search for <strong>Disk Clean-up</strong> in the task bar, or right-click <strong>C:/ → Properties → Disk Clean-up</strong>. It will show what can be safely removed. Check the categories as appropriate and select <strong>OK</strong>.</p>
+        <!-- Screenshot: Disk Cleanup -->
+        <div style="margin-top:12px;border:1px solid #D0DCE8;border-radius:6px;overflow:hidden;">
+          <div style="background:#F1F5F9;padding:6px 14px;border-bottom:1px solid #D0DCE8;">
+            <span style="font-family:'Montserrat',sans-serif;font-size:9.5px;font-weight:700;color:#827C78;letter-spacing:1px;text-transform:uppercase;">Windows Disk Clean-up dialog</span>
+          </div>
+          <img src="uploads/pasted-1782883548059-0.png" alt="Windows Disk Clean-up dialog showing files that can be removed" style="max-width:360px;display:block;margin:0 auto;padding:8px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #D0DCE8;border-radius:8px;padding:16px 20px;">
+      <div style="width:28px;height:28px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+        <span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">4</span>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 6px;">OneDrive — Free Up Space</h4>
+        <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0;">Folders and files saved on disk (rather than cloud-only) are shown with a <strong>green tick</strong>. If you don't need immediate offline access, right-click and choose <strong>Free Up Space</strong> to keep them cloud-only.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 2: REVIT-SPECIFIC CLEANUP ═══ -->
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+    <div style="width:44px;height:44px;background:#2568B8;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M4 18V4h7l3 3h4v11H4z" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"></path><line x1="8" y1="10" x2="14" y2="10" stroke="white" stroke-width="1.3"></line><line x1="8" y1="13" x2="12" y2="13" stroke="white" stroke-width="1.3"></line></svg>
+    </div>
+    <div>
+      <div style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#2568B8;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;">Section 2</div>
+      <h2 style="font-size:22px;font-weight:800;color:#1B3558;line-height:1.2;">Clearing Disk Space for Revit</h2>
+    </div>
+  </div>
+
+  <p style="font-size:14px;line-height:1.7;color:#2C3E50;margin:0 0 18px;">These steps apply specifically to <strong>Revit on virtual desktops</strong>.</p>
+
+  <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:44px;">
+
+    <!-- Revit Step 1 -->
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #D0DCE8;border-radius:8px;padding:16px 20px;">
+      <div style="width:28px;height:28px;background:#1B3558;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+        <span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">1</span>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 6px;">Clear C:\Autodesk</h4>
+        <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0;">Autodesk stores installers here to assist with repair installs, but they are not generally needed — we have the installers centrally in IT. Files in this location can total up to <strong>50 GB</strong> and can be safely removed.</p>
+      </div>
+    </div>
+
+    <!-- Revit Step 2 -->
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #D0DCE8;border-radius:8px;padding:16px 20px;">
+      <div style="width:28px;height:28px;background:#1B3558;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+        <span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">2</span>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 6px;">Remove Old Revit Local Files</h4>
+        <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0 0 8px;">By default Revit saves local files into Documents. Create subfolders for each version for ease of management:</p>
+        <div style="background:#F1F5F9;border-radius:5px;padding:8px 14px;margin-bottom:8px;">
+          <code style="font-size:12.5px;color:#2A3142;font-family:'Consolas','Courier New',monospace;">%USERPROFILE%\Documents\Revit 2026 Local</code>
+        </div>
+        <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0;">To check your local file path: <strong>R → Options → Default path for user files</strong>. Once changes are synced to central, local files are no longer necessary — delete them if you're not actively using the model.</p>
+      </div>
+    </div>
+
+    <!-- Revit Step 3 -->
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #D0DCE8;border-radius:8px;padding:16px 20px;">
+      <div style="width:28px;height:28px;background:#1B3558;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+        <span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">3</span>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 6px;">Free Up Space in Desktop Connector <span style="font-weight:400;color:#827C78;font-size:12px;">(ACC / BIM 360 only)</span></h4>
+        <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0 0 8px;">Desktop Connector may download linked files for ease of access. Free up space by right-clicking on a project listed in <strong>This PC → Autodesk Docs</strong> and selecting <strong>Free Up Space</strong>.</p>
+        <div style="background:#FEF2F2;border:1px solid #E85454;border-radius:6px;padding:10px 14px;">
+          <p style="font-size:12.5px;line-height:1.65;color:#991B1B;margin:0;"><strong>⛔ Mandatory:</strong> Do not directly delete files in Explorer within ACC / BIM 360 — they will be deleted from the cloud as well.</p>
+        </div>
+        <!-- Screenshot: Desktop Connector Free Up Space -->
+        <div style="margin-top:12px;border:1px solid #D0DCE8;border-radius:6px;overflow:hidden;">
+          <div style="background:#F1F5F9;padding:6px 14px;border-bottom:1px solid #D0DCE8;">
+            <span style="font-family:'Montserrat',sans-serif;font-size:9.5px;font-weight:700;color:#827C78;letter-spacing:1px;text-transform:uppercase;">Right-click project → Free Up Space</span>
+          </div>
+          <img src="uploads/pasted-1782883664562-0.png" alt="Right-click on Autodesk Docs project and select Free Up Space" style="max-width:480px;display:block;margin:0 auto;padding:8px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Revit Step 4 -->
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #D0DCE8;border-radius:8px;padding:16px 20px;">
+      <div style="width:28px;height:28px;background:#1B3558;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+        <span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">4</span>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 6px;">Clear Collaboration Cache <span style="font-weight:400;color:#827C78;font-size:12px;">(ACC / BIM 360 only)</span></h4>
+        <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0 0 8px;">With Revit closed, delete all files from these four locations (<code style="font-size:12px;background:#F1F5F9;padding:2px 5px;border-radius:3px;">##</code> = Revit year version):</p>
+        <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:6px;">
+          <div style="background:#F1F5F9;border-radius:5px;padding:7px 14px;">
+            <code style="font-size:11.5px;color:#2A3142;font-family:'Consolas','Courier New',monospace;">C:\Users\%username%\AppData\Local\Autodesk\Revit\Autodesk Revit 20##\CollaborationCache\</code>
+          </div>
+          <div style="background:#F1F5F9;border-radius:5px;padding:7px 14px;">
+            <code style="font-size:11.5px;color:#2A3142;font-family:'Consolas','Courier New',monospace;">C:\Users\%username%\AppData\Local\Autodesk\Revit\PacCache\</code>
+          </div>
+          <div style="background:#F1F5F9;border-radius:5px;padding:7px 14px;">
+            <code style="font-size:11.5px;color:#2A3142;font-family:'Consolas','Courier New',monospace;">C:\Users\%username%\AppData\Local\Autodesk\Revit\Autodesk Revit 20##\CefCache</code>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Revit Step 5 -->
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #D0DCE8;border-radius:8px;padding:16px 20px;">
+      <div style="width:28px;height:28px;background:#1B3558;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+        <span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">5</span>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 6px;">Clear TEMP</h4>
+        <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0;">Applications including Revit use TEMP for temporary files. With as many applications closed as possible, type <code style="font-size:12px;background:#F1F5F9;padding:2px 5px;border-radius:3px;">%TEMP%</code> into an Explorer window, press <strong>Ctrl+A</strong> to select everything, then delete. Files needed by active applications will be skipped.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 3: DEEPER CLEAN ═══ -->
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+    <div style="width:44px;height:44px;background:#C07A10;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" fill="none" stroke="white" stroke-width="1.5"></circle><path d="M11 7v5" stroke="white" stroke-width="1.5" stroke-linecap="round"></path><circle cx="11" cy="15" r="1" fill="white"></circle></svg>
+    </div>
+    <div>
+      <div style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#C07A10;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;">Section 3</div>
+      <h2 style="font-size:22px;font-weight:800;color:#1B3558;line-height:1.2;">Deeper Clean</h2>
+    </div>
+  </div>
+
+  <p style="font-size:14px;line-height:1.7;color:#2C3E50;margin:0 0 18px;">If you're still struggling for space after the steps above, check these areas.</p>
+
+  <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:44px;">
+
+    <!-- Deep 1: Remove unused software -->
+    <div style="background:#fff;border:1px solid #D0DCE8;border-radius:8px;padding:18px 22px;">
+      <h4 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 10px;">1. Remove Unused Software</h4>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="background:#F8FAFC;border-radius:6px;padding:12px 16px;">
+          <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0;"><strong>Adobe:</strong> Check Creative Cloud and remove older versions if not needed.</p>
+        </div>
+        <div style="background:#F8FAFC;border-radius:6px;padding:12px 16px;">
+          <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0;"><strong>Autodesk:</strong> Each year brings new versions of Revit, AutoCAD etc. Consider whether you need all installed versions. To remove, email IT.</p>
+        </div>
+        <div style="background:#F8FAFC;border-radius:6px;padding:12px 16px;">
+          <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0;"><strong>Twinmotion:</strong> Consumes about <strong>18 GB per version</strong>. If you no longer need a version, email IT to request removal.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deep 2: Outlook PST -->
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #D0DCE8;border-radius:8px;padding:16px 20px;">
+      <div style="width:28px;height:28px;background:#5A6B7C;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+        <span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">2</span>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 6px;">Outlook PST</h4>
+        <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0;">If your inbox is very large it will consume disk space. Check with IT about the archive policy on your account.</p>
+      </div>
+    </div>
+
+    <!-- Deep 3: Old Users -->
+    
+
+    <!-- Deep 4: WinDirStat -->
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #D0DCE8;border-radius:8px;padding:16px 20px;">
+      <div style="width:28px;height:28px;background:#5A6B7C;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+        <span style="color:white;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;">3</span>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:700;color:#1B3558;margin:0 0 6px;">WinDirStat Analysis</h4>
+        <p style="font-size:13.5px;line-height:1.7;color:#2C3E50;margin:0;">Get IT to run <strong>WinDirStat</strong> to analyse used space and identify what can be targeted for removal. This gives a visual treemap of your entire disk to pinpoint the largest consumers.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Closing note -->
+  <div style="background:linear-gradient(135deg,#2A3142 0%,#2568B8 100%);border-radius:10px;padding:28px 32px;margin-bottom:44px;">
+    <div style="display:flex;gap:18px;align-items:flex-start;">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" style="flex-shrink:0;margin-top:2px;"><circle cx="17" cy="17" r="15" fill="rgba(255,255,255,0.15)"></circle><path d="M11 17 L15 21 L23 13" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;margin:0 0 10px;color:white;">Keep It Clean</h3>
+        <p style="font-size:14.5px;line-height:1.7;margin:0;color:rgba(255,255,255,0.9);">Running low on disk space impacts Revit performance, sync reliability, and export quality. Make these checks a regular part of your workflow — a quick cleanup every few weeks prevents problems before they start. For persistent issues, contact IT.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="border-top:1px solid #D0DCE8;padding-top:16px;display:flex;justify-content:space-between;align-items:center;">
+    <span style="font-family:'Montserrat',sans-serif;font-size:10.5px;color:#9AAABB;">IT / BIM Team · Internal Use Only</span>
+    <span style="font-family:'Montserrat',sans-serif;font-size:10.5px;color:#9AAABB;">Clearing Disk Space · v1.0 · July 2026</span>
+  </div>
+
+</main>
+</x-dc>
+</body>
+</html>

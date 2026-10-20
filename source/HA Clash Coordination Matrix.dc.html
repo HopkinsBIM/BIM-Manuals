@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<template id="__bundler_thumbnail" data-bg-color="#2A3142">
+  <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="600" fill="#2A3142"></rect>
+    <rect x="200" y="150" width="400" height="300" rx="8" fill="none" stroke="#2568B8" stroke-width="2"></rect>
+    <line x1="200" y1="200" x2="600" y2="200" stroke="#2568B8" stroke-width="1"></line>
+    <line x1="200" y1="250" x2="600" y2="250" stroke="#2568B8" stroke-width="0.5"></line>
+    <line x1="200" y1="300" x2="600" y2="300" stroke="#2568B8" stroke-width="0.5"></line>
+    <line x1="200" y1="350" x2="600" y2="350" stroke="#2568B8" stroke-width="0.5"></line>
+    <line x1="200" y1="400" x2="600" y2="400" stroke="#2568B8" stroke-width="0.5"></line>
+    <line x1="280" y1="150" x2="280" y2="450" stroke="#2568B8" stroke-width="0.5"></line>
+    <line x1="360" y1="150" x2="360" y2="450" stroke="#2568B8" stroke-width="0.5"></line>
+    <line x1="440" y1="150" x2="440" y2="450" stroke="#2568B8" stroke-width="0.5"></line>
+    <line x1="520" y1="150" x2="520" y2="450" stroke="#2568B8" stroke-width="0.5"></line>
+    <text x="400" y="530" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="20" font-family="sans-serif">Clash Coordination Matrix</text>
+  </svg>
+</template>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: #DDE4ED; font-family: 'Source Sans 3', sans-serif; }
+    .doc { max-width: 8.5in; margin: 0 auto; background: #fff; padding: 48px clamp(24px,5vw,0.75in) 72px; }
+    h1,h2,h3,h4 { font-family: 'Montserrat',sans-serif; text-wrap: balance; margin: 0; }
+    p, li { text-wrap: pretty; }
+    a { color: #2568B8; }
+    a:hover { color: #2A3142; }
+    @media print {
+      html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      body { background: #fff; margin: 0; padding: 0; }
+      .doc { max-width: none; margin: 0; padding: 0.75in; box-shadow: none; }
+      h1,h2,h3,h4 { break-after: avoid; }
+    }
+  </style>
+</helmet>
+
+<!-- ═══════════ COVER PAGE ═══════════ -->
+<div style="min-height:100vh; background:#1B3558; display:flex; flex-direction:column; position:relative; overflow:hidden; font-family:'Montserrat',sans-serif; page-break-after:always;">
+
+  <!-- Blueprint grid background -->
+  <svg style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.07;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+        <path d="M 48 0 L 0 0 0 48" fill="none" stroke="white" stroke-width="0.6"></path>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+  </svg>
+
+  <!-- Decorative rings -->
+  <svg style="position:absolute;top:-100px;right:-100px;width:480px;height:480px;opacity:0.12;" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="240" cy="240" r="220" fill="none" stroke="#4A90D9" stroke-width="1"></circle>
+    <circle cx="240" cy="240" r="160" fill="none" stroke="#4A90D9" stroke-width="0.8"></circle>
+    <circle cx="240" cy="240" r="100" fill="none" stroke="#4A90D9" stroke-width="0.6"></circle>
+    <circle cx="240" cy="240" r="40" fill="none" stroke="#4A90D9" stroke-width="0.5"></circle>
+    <line x1="20" y1="240" x2="460" y2="240" stroke="#4A90D9" stroke-width="0.4"></line>
+    <line x1="240" y1="20" x2="240" y2="460" stroke="#4A90D9" stroke-width="0.4"></line>
+  </svg>
+
+  <!-- Top bar -->
+  <div style="padding:36px 60px;display:flex;justify-content:space-between;align-items:center;z-index:1;">
+    <img src="uploads/Hopkins Architects Right Aligned_White.png" alt="Hopkins Architects" style="height:46px;">
+    <span style="color:rgba(255,255,255,0.35);font-size:11px;letter-spacing:1px;">Internal Document · BIM Standards</span>
+  </div>
+
+  <!-- Main content -->
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:40px 60px 56px;z-index:1;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:28px;">
+      <div style="width:36px;height:2px;background:#2568B8;"></div>
+      <span style="color:#7EB8E8;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;">BIM Team · Design Coordination</span>
+    </div>
+    <h1 style="color:#fff;font-size:44px;font-weight:800;line-height:1.13;margin:0 0 22px;max-width:620px;">Clash Coordination<br>Matrix</h1>
+    <p style="color:#A8C8E8;font-size:16px;line-height:1.65;margin:0 0 44px;max-width:520px;font-weight:400;">Discipline codes, priorities, tolerances, give-way hierarchy<br>and coordination scenarios</p>
+    <div style="width:56px;height:3px;background:#2568B8;border-radius:2px;margin-bottom:52px;"></div>
+    <div style="display:flex;gap:52px;flex-wrap:wrap;">
+      <div>
+        <div style="color:rgba(255,255,255,0.38);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Prepared By</div>
+        <div style="color:#fff;font-size:15px;font-weight:500;">Prashanth Perumal</div>
+      </div>
+      <div>
+        <div style="color:rgba(255,255,255,0.38);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Date</div>
+        <div style="color:#fff;font-size:15px;font-weight:500;">July 2026</div>
+      </div>
+      <div>
+        <div style="color:rgba(255,255,255,0.38);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Version History</div>
+        <div style="color:#fff;font-size:15px;font-weight:500;">Version 1.0</div>
+      </div>
+    </div>
+
+    <!-- Revision History -->
+    <div style="margin-top:28px;border-radius:6px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);">
+      <div style="background:rgba(255,255,255,0.08);padding:8px 16px;">
+        <span style="font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.4);letter-spacing:1.5px;text-transform:uppercase;">Version History</span>
+      </div>
+      <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(255,255,255,0.05);">
+        <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Ver</div>
+        <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Date</div>
+        <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Description</div>
+        <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Status</div>
+      </div>
+      <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(37,104,184,0.15);">
+        <div style="padding:7px 12px;font-size:12px;font-weight:700;color:#7EB8E8;">1.0</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.7);">Jul 2026</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.7);">Initial release — Clash Coordination Matrix</div>
+        <div style="padding:7px 12px;display:flex;align-items:center;gap:6px;"><div style="width:6px;height:6px;background:#4ADE80;border-radius:50%;"></div><span style="font-size:11px;font-weight:600;color:#4ADE80;">Current</span></div>
+      </div>
+      <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(0,0,0,0.1);border-top:1px solid rgba(255,255,255,0.05);">
+        <div style="padding:7px 12px;font-size:12px;font-weight:700;color:rgba(255,255,255,0.3);">—</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.3);">—</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.3);">Draft</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.25);">Superseded</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Revit 2026 notice -->
+  <div style="background:rgba(37,104,184,0.22);border-top:1px solid rgba(126,184,232,0.3);padding:12px 60px;z-index:1;display:flex;align-items:center;gap:12px;font-family:'Montserrat',sans-serif;">
+    <span style="flex-shrink:0;color:#1B3558;background:#7EB8E8;font-size:9.5px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border-radius:3px;">Notice</span>
+    <span style="color:#fff;font-size:12.5px;font-weight:500;line-height:1.5;">With effect from 15 Oct 2026 All new projects shall be initiated in Revit 2026 unless there is Client requirement to use older versions.</span>
+  </div>
+
+  <!-- Bottom strip -->
+  <div style="background:rgba(0,0,0,0.2);padding:14px 60px;z-index:1;display:flex;align-items:center;gap:12px;">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="7" height="7" rx="1" fill="#2568B8"></rect><rect x="10" y="1" width="7" height="7" rx="1" fill="#2568B8" opacity="0.5"></rect><rect x="1" y="10" width="7" height="7" rx="1" fill="#2568B8" opacity="0.5"></rect><rect x="10" y="10" width="7" height="7" rx="1" fill="#2568B8" opacity="0.3"></rect></svg>
+    <span style="color:rgba(255,255,255,0.35);font-size:11px;">Hopkins Architects Dubai Limited · BIM Standards Library</span>
+  </div>
+</div>
+
+<!-- ═══════════ BODY ═══════════ -->
+<main class="doc" style="font-size:15px;line-height:1.7;color:#2A3142;">
+
+  <!-- Clash Coordination Matrix -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 20px;">Clash Coordination Matrix</div>
+
+  <p style="margin:0 0 16px;">The matrix defines which discipline pairs are clash-tested, at what priority and clearance tolerance. The coordination sheets show who is accountable depending on whether the architect acts as Lead Design Consultant or as Architect only.</p>
+
+  <!-- Download link -->
+  <div style="background:#EBF4FF;border:1px solid #B8D4F0;border-radius:8px;padding:14px 18px;display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="1" y="1" width="20" height="20" rx="4" fill="#2568B8"></rect><path d="M11 6v7m0 0l-3-3m3 3l3-3M7 16h8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <div>
+      <a href="./Clash_Coordination_Matrix.xlsx" download="" style="font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;color:#2568B8;text-decoration:none;">Download Clash Coordination Matrix (.xlsx)</a>
+      <div style="font-size:12px;color:#8A9AB5;margin-top:2px;">Contains all four sheets: Legend, Clash Test Matrix, Scenario 1 (LDC), Scenario 2 (Architect only)</div>
+    </div>
+  </div>
+
+  <!-- Discipline Codes -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 14px;">01 — Discipline Codes</div>
+  <div style="border:1px solid #D6DDE8;border-radius:8px;overflow:hidden;margin-bottom:24px;font-size:13px;">
+    <div style="display:grid;grid-template-columns:52px 200px 1fr;background:#1B3558;">
+      <div style="padding:8px 12px;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Code</div>
+      <div style="padding:8px 12px;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Discipline</div>
+      <div style="padding:8px 12px;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Notes</div>
+    </div>
+    <div style="display:grid;grid-template-columns:52px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 12px;font-weight:700;color:#1B3558;background:#F8F9FB;">AR</div><div style="padding:7px 12px;color:#2A3142;">Architecture</div><div style="padding:7px 12px;color:#555;">Spaces, walls, ceilings, finishes, clearances</div></div>
+    <div style="display:grid;grid-template-columns:52px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 12px;font-weight:700;color:#1B3558;background:#F8F9FB;">ST</div><div style="padding:7px 12px;color:#2A3142;">Structure</div><div style="padding:7px 12px;color:#555;">Priority element; gives way last</div></div>
+    <div style="display:grid;grid-template-columns:52px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 12px;font-weight:700;color:#1B3558;background:#F8F9FB;">ME</div><div style="padding:7px 12px;color:#2A3142;">Mechanical / HVAC</div><div style="padding:7px 12px;color:#555;">Ducts, AHUs, FCUs, plant</div></div>
+    <div style="display:grid;grid-template-columns:52px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 12px;font-weight:700;color:#1B3558;background:#F8F9FB;">EL</div><div style="padding:7px 12px;color:#2A3142;">Electrical</div><div style="padding:7px 12px;color:#555;">Cable trays, busbar, containment, panels</div></div>
+    <div style="display:grid;grid-template-columns:52px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 12px;font-weight:700;color:#1B3558;background:#F8F9FB;">ICT</div><div style="padding:7px 12px;color:#2A3142;">Info &amp; Comms Technology (ELV)</div><div style="padding:7px 12px;color:#555;">Data cabling, CCTV, access control, AV — segregate from EL power</div></div>
+    <div style="display:grid;grid-template-columns:52px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 12px;font-weight:700;color:#1B3558;background:#F8F9FB;">PH</div><div style="padding:7px 12px;color:#2A3142;">Public Health (Plumbing)</div><div style="padding:7px 12px;color:#555;">Gravity drainage, domestic water, pumps</div></div>
+    <div style="display:grid;grid-template-columns:52px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 12px;font-weight:700;color:#1B3558;background:#F8F9FB;">FF</div><div style="padding:7px 12px;color:#2A3142;">Fire Fighting / Protection</div><div style="padding:7px 12px;color:#555;">Sprinkler mains, hydrants, pumps, tanks</div></div>
+    <div style="display:grid;grid-template-columns:52px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 12px;font-weight:700;color:#1B3558;background:#F8F9FB;">FA</div><div style="padding:7px 12px;color:#2A3142;">Facade / Envelope</div><div style="padding:7px 12px;color:#555;">Curtain wall, cladding, brackets, slab-edge</div></div>
+    <div style="display:grid;grid-template-columns:52px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 12px;font-weight:700;color:#1B3558;background:#F8F9FB;">VT</div><div style="padding:7px 12px;color:#2A3142;">Vertical Transportation</div><div style="padding:7px 12px;color:#555;">Lifts, escalators — shaft, pit, overrun, clearances</div></div>
+    <div style="display:grid;grid-template-columns:52px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 12px;font-weight:700;color:#1B3558;background:#F8F9FB;">CV</div><div style="padding:7px 12px;color:#2A3142;">Civil / External Works</div><div style="padding:7px 12px;color:#555;">Below-ground drainage, roads, retaining, site utilities</div></div>
+    <div style="display:grid;grid-template-columns:52px 200px 1fr;"><div style="padding:7px 12px;font-weight:700;color:#1B3558;background:#F8F9FB;">LS</div><div style="padding:7px 12px;color:#2A3142;">Landscape</div><div style="padding:7px 12px;color:#555;">Softscape, hardscape, irrigation, external lighting</div></div>
+  </div>
+
+  <!-- Priority & Tolerance Legend -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 14px;">02 — Priority &amp; Tolerance</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px;">
+    <div style="border:1px solid #D6DDE8;border-radius:8px;overflow:hidden;font-size:13px;">
+      <div style="background:#1B3558;padding:8px 14px;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Clash Priority</div>
+      <div style="display:flex;align-items:center;gap:10px;padding:8px 14px;border-bottom:1px solid #E8EBF0;"><div style="min-width:32px;height:20px;background:#C52E24;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;">P1</div><div><strong>Critical / Hard</strong> — Life-safety, structural conflict. 0 mm tolerance.</div></div>
+      <div style="display:flex;align-items:center;gap:10px;padding:8px 14px;border-bottom:1px solid #E8EBF0;"><div style="min-width:32px;height:20px;background:#C07A10;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;">P2</div><div><strong>Major / Hard</strong> — Physical overlap or clearance breach. Resolve in cycle.</div></div>
+      <div style="display:flex;align-items:center;gap:10px;padding:8px 14px;border-bottom:1px solid #E8EBF0;"><div style="min-width:32px;height:20px;background:#2568B8;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;">P3</div><div><strong>Minor / Soft</strong> — Clearance or maintenance-zone breach. Tracked.</div></div>
+      <div style="display:flex;align-items:center;gap:10px;padding:8px 14px;"><div style="min-width:32px;height:20px;background:#999;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;">N/A</div><div>No meaningful interface — no test required.</div></div>
+    </div>
+    <div style="border:1px solid #D6DDE8;border-radius:8px;overflow:hidden;font-size:13px;">
+      <div style="background:#1B3558;padding:8px 14px;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Clearance Tolerance</div>
+      <div style="padding:8px 14px;border-bottom:1px solid #E8EBF0;"><strong>0 mm</strong> — Hard clash; any geometric overlap flagged.</div>
+      <div style="padding:8px 14px;border-bottom:1px solid #E8EBF0;"><strong>25 mm</strong> — Insulation / cover / installation clearance.</div>
+      <div style="padding:8px 14px;border-bottom:1px solid #E8EBF0;"><strong>50 mm</strong> — Service-to-service running clearance.</div>
+      <div style="padding:8px 14px;border-bottom:1px solid #E8EBF0;"><strong>150 mm</strong> — Electrical containment from wet services.</div>
+      <div style="padding:8px 14px;"><strong>—</strong> — Governed by design zone / authority requirement.</div>
+    </div>
+  </div>
+
+  <!-- Clash Test Matrix -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 14px;">03 — Clash Test Matrix</div>
+  <div style="overflow-x:auto;margin-bottom:24px;" data-om-raster="">
+    <table style="border-collapse:collapse;font-size:11px;width:100%;min-width:700px;">
+      <thead>
+        <tr style="background:#1B3558;">
+          <th style="padding:6px 8px;color:rgba(255,255,255,0.8);text-align:left;font-weight:700;font-size:10px;border:1px solid #2A4A70;min-width:52px;"></th>
+          <th style="padding:6px 8px;color:rgba(255,255,255,0.8);text-align:center;font-weight:700;font-size:10px;border:1px solid #2A4A70;">AR</th>
+          <th style="padding:6px 8px;color:rgba(255,255,255,0.8);text-align:center;font-weight:700;font-size:10px;border:1px solid #2A4A70;">ST</th>
+          <th style="padding:6px 8px;color:rgba(255,255,255,0.8);text-align:center;font-weight:700;font-size:10px;border:1px solid #2A4A70;">ME</th>
+          <th style="padding:6px 8px;color:rgba(255,255,255,0.8);text-align:center;font-weight:700;font-size:10px;border:1px solid #2A4A70;">EL</th>
+          <th style="padding:6px 8px;color:rgba(255,255,255,0.8);text-align:center;font-weight:700;font-size:10px;border:1px solid #2A4A70;">ICT</th>
+          <th style="padding:6px 8px;color:rgba(255,255,255,0.8);text-align:center;font-weight:700;font-size:10px;border:1px solid #2A4A70;">PH</th>
+          <th style="padding:6px 8px;color:rgba(255,255,255,0.8);text-align:center;font-weight:700;font-size:10px;border:1px solid #2A4A70;">FF</th>
+          <th style="padding:6px 8px;color:rgba(255,255,255,0.8);text-align:center;font-weight:700;font-size:10px;border:1px solid #2A4A70;">FA</th>
+          <th style="padding:6px 8px;color:rgba(255,255,255,0.8);text-align:center;font-weight:700;font-size:10px;border:1px solid #2A4A70;">VT</th>
+          <th style="padding:6px 8px;color:rgba(255,255,255,0.8);text-align:center;font-weight:700;font-size:10px;border:1px solid #2A4A70;">CV</th>
+          <th style="padding:6px 8px;color:rgba(255,255,255,0.8);text-align:center;font-weight:700;font-size:10px;border:1px solid #2A4A70;">LS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="padding:5px 8px;font-weight:700;color:#1B3558;background:#F4F7FB;border:1px solid #D6DDE8;">AR</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#FDEAEA;border:1px solid #D6DDE8;font-weight:700;color:#C52E24;font-size:10px;">P1<br><span style="font-weight:400;font-size:9px;color:#888;">0mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">25mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">25mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">25mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">25mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">25mm</span></td><td style="padding:5px;text-align:center;background:#FDEAEA;border:1px solid #D6DDE8;font-weight:700;color:#C52E24;font-size:10px;">P1<br><span style="font-weight:400;font-size:9px;color:#888;">0mm</span></td><td style="padding:5px;text-align:center;background:#FDEAEA;border:1px solid #D6DDE8;font-weight:700;color:#C52E24;font-size:10px;">P1<br><span style="font-weight:400;font-size:9px;color:#888;">25mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td></tr>
+        <tr><td style="padding:5px 8px;font-weight:700;color:#1B3558;background:#F4F7FB;border:1px solid #D6DDE8;">ST</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#FDEAEA;border:1px solid #D6DDE8;font-weight:700;color:#C52E24;font-size:10px;">P1<br><span style="font-weight:400;font-size:9px;color:#888;">0mm</span></td><td style="padding:5px;text-align:center;background:#FDEAEA;border:1px solid #D6DDE8;font-weight:700;color:#C52E24;font-size:10px;">P1<br><span style="font-weight:400;font-size:9px;color:#888;">0mm</span></td><td style="padding:5px;text-align:center;background:#FDEAEA;border:1px solid #D6DDE8;font-weight:700;color:#C52E24;font-size:10px;">P1<br><span style="font-weight:400;font-size:9px;color:#888;">0mm</span></td><td style="padding:5px;text-align:center;background:#FDEAEA;border:1px solid #D6DDE8;font-weight:700;color:#C52E24;font-size:10px;">P1<br><span style="font-weight:400;font-size:9px;color:#888;">0mm</span></td><td style="padding:5px;text-align:center;background:#FDEAEA;border:1px solid #D6DDE8;font-weight:700;color:#C52E24;font-size:10px;">P1<br><span style="font-weight:400;font-size:9px;color:#888;">0mm</span></td><td style="padding:5px;text-align:center;background:#FDEAEA;border:1px solid #D6DDE8;font-weight:700;color:#C52E24;font-size:10px;">P1<br><span style="font-weight:400;font-size:9px;color:#888;">0mm</span></td><td style="padding:5px;text-align:center;background:#FDEAEA;border:1px solid #D6DDE8;font-weight:700;color:#C52E24;font-size:10px;">P1<br><span style="font-weight:400;font-size:9px;color:#888;">0mm</span></td><td style="padding:5px;text-align:center;background:#FDEAEA;border:1px solid #D6DDE8;font-weight:700;color:#C52E24;font-size:10px;">P1<br><span style="font-weight:400;font-size:9px;color:#888;">0mm</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td></tr>
+        <tr><td style="padding:5px 8px;font-weight:700;color:#1B3558;background:#F4F7FB;border:1px solid #D6DDE8;">ME</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">50mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">50mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">50mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">50mm</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">25mm</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td><td style="padding:5px;text-align:center;background:#F4F4F6;border:1px solid #D6DDE8;color:#999;font-size:10px;">N/A</td></tr>
+        <tr><td style="padding:5px 8px;font-weight:700;color:#1B3558;background:#F4F7FB;border:1px solid #D6DDE8;">EL</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">50mm</span></td><td style="padding:5px;text-align:center;background:#FDEAEA;border:1px solid #D6DDE8;font-weight:700;color:#C52E24;font-size:10px;">P1<br><span style="font-weight:400;font-size:9px;color:#888;">150mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">50mm</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">25mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">25mm</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td></tr>
+        <tr><td style="padding:5px 8px;font-weight:700;color:#1B3558;background:#F4F7FB;border:1px solid #D6DDE8;">ICT</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">50mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">50mm</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">25mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">25mm</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td></tr>
+        <tr><td style="padding:5px 8px;font-weight:700;color:#1B3558;background:#F4F7FB;border:1px solid #D6DDE8;">PH</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">50mm</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">25mm</span></td><td style="padding:5px;text-align:center;background:#FDEAEA;border:1px solid #D6DDE8;font-weight:700;color:#C52E24;font-size:10px;">P1<br><span style="font-weight:400;font-size:9px;color:#888;">0mm</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td></tr>
+        <tr><td style="padding:5px 8px;font-weight:700;color:#1B3558;background:#F4F7FB;border:1px solid #D6DDE8;">FF</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">25mm</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td></tr>
+        <tr><td style="padding:5px 8px;font-weight:700;color:#1B3558;background:#F4F7FB;border:1px solid #D6DDE8;">FA</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#F4F4F6;border:1px solid #D6DDE8;color:#999;font-size:10px;">N/A</td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td></tr>
+        <tr><td style="padding:5px 8px;font-weight:700;color:#1B3558;background:#F4F7FB;border:1px solid #D6DDE8;">VT</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#EBF4FF;border:1px solid #D6DDE8;font-weight:700;color:#2568B8;font-size:10px;">P3<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td><td style="padding:5px;text-align:center;background:#F4F4F6;border:1px solid #D6DDE8;color:#999;font-size:10px;">N/A</td></tr>
+        <tr><td style="padding:5px 8px;font-weight:700;color:#1B3558;background:#F4F7FB;border:1px solid #D6DDE8;">CV</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#FEF6E7;border:1px solid #D6DDE8;font-weight:700;color:#C07A10;font-size:10px;">P2<br><span style="font-weight:400;font-size:9px;color:#888;">—</span></td></tr>
+        <tr><td style="padding:5px 8px;font-weight:700;color:#1B3558;background:#F4F7FB;border:1px solid #D6DDE8;">LS</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td><td style="padding:5px;text-align:center;background:#E8EBF0;border:1px solid #D6DDE8;color:#999;font-size:9px;">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Give-Way Hierarchy -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 14px;">04 — Give-Way / Resolution Hierarchy</div>
+  <p style="margin:0 0 12px;font-size:14px;color:#555;">Highest priority stays put; lower gives way.</p>
+  <div style="border:1px solid #D6DDE8;border-radius:8px;overflow:hidden;margin-bottom:24px;font-size:13px;">
+    <div style="display:grid;grid-template-columns:40px 200px 1fr;background:#1B3558;">
+      <div style="padding:8px 10px;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;">#</div>
+      <div style="padding:8px 10px;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;">Element</div>
+      <div style="padding:8px 10px;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;">Basis</div>
+    </div>
+    <div style="display:grid;grid-template-columns:40px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 10px;font-weight:700;color:#C52E24;background:#F8F9FB;">1</div><div style="padding:7px 10px;font-weight:600;color:#1B3558;">Structure (ST)</div><div style="padding:7px 10px;color:#555;">Moves last — reroute services, never the frame.</div></div>
+    <div style="display:grid;grid-template-columns:40px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 10px;font-weight:700;color:#C52E24;background:#F8F9FB;">2</div><div style="padding:7px 10px;font-weight:600;color:#1B3558;">Gravity drainage (PH) &amp; Civil (CV)</div><div style="padding:7px 10px;color:#555;">Fixed invert levels / gradients.</div></div>
+    <div style="display:grid;grid-template-columns:40px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 10px;font-weight:700;color:#C07A10;background:#F8F9FB;">3</div><div style="padding:7px 10px;font-weight:600;color:#1B3558;">Vertical transportation (VT)</div><div style="padding:7px 10px;color:#555;">Fixed shaft, pit and running clearances.</div></div>
+    <div style="display:grid;grid-template-columns:40px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 10px;font-weight:700;color:#C07A10;background:#F8F9FB;">4</div><div style="padding:7px 10px;font-weight:600;color:#1B3558;">Large ductwork (ME)</div><div style="padding:7px 10px;color:#555;">Bulky, low flexibility; other services route around it.</div></div>
+    <div style="display:grid;grid-template-columns:40px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 10px;font-weight:700;color:#C07A10;background:#F8F9FB;">5</div><div style="padding:7px 10px;font-weight:600;color:#1B3558;">Fire mains &amp; sprinkler (FF)</div><div style="padding:7px 10px;color:#555;">Coordinated grid; limited flexibility.</div></div>
+    <div style="display:grid;grid-template-columns:40px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 10px;font-weight:700;color:#2568B8;background:#F8F9FB;">6</div><div style="padding:7px 10px;font-weight:600;color:#1B3558;">Pressurised water pipes (PH)</div><div style="padding:7px 10px;color:#555;">More flexible than gravity / ducts.</div></div>
+    <div style="display:grid;grid-template-columns:40px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 10px;font-weight:700;color:#2568B8;background:#F8F9FB;">7</div><div style="padding:7px 10px;font-weight:600;color:#1B3558;">Cable trays / busbar (EL — major)</div><div style="padding:7px 10px;color:#555;">Reroutable within containment strategy.</div></div>
+    <div style="display:grid;grid-template-columns:40px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 10px;font-weight:700;color:#2568B8;background:#F8F9FB;">8</div><div style="padding:7px 10px;font-weight:600;color:#1B3558;">Comms &amp; data containment (ICT)</div><div style="padding:7px 10px;color:#555;">Light, flexible; keep EMI separation from EL.</div></div>
+    <div style="display:grid;grid-template-columns:40px 200px 1fr;border-bottom:1px solid #E8EBF0;"><div style="padding:7px 10px;font-weight:700;color:#888;background:#F8F9FB;">9</div><div style="padding:7px 10px;font-weight:600;color:#1B3558;">Conduit / final connections (EL — minor)</div><div style="padding:7px 10px;color:#555;">Most flexible; gives way first.</div></div>
+    <div style="display:grid;grid-template-columns:40px 200px 1fr;"><div style="padding:7px 10px;font-weight:700;color:#888;background:#F8F9FB;">10</div><div style="padding:7px 10px;font-weight:600;color:#1B3558;">Architecture (AR)</div><div style="padding:7px 10px;color:#555;">Absorbs residual via bulkheads / ceiling drops.</div></div>
+  </div>
+
+  <!-- Two Scenarios -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 14px;">05 — Coordination Scenarios</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px;">
+    <div style="background:#EBF4FF;border:1px solid #B8D4F0;border-radius:8px;padding:18px 20px;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#2568B8;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;">Scenario 1 — As LDC</div>
+      <ul style="margin:0;padding-left:18px;font-size:13px;line-height:1.7;color:#2A3142;">
+        <li>Architect hosts &amp; maintains the federated model</li>
+        <li>Architect runs clash detection across <strong>all pairs</strong></li>
+        <li>Architect is <strong>Accountable (A)</strong> for every pair</li>
+        <li>Architect chairs coordination &amp; tracks to closure</li>
+      </ul>
+    </div>
+    <div style="background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:18px 20px;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#1B3558;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;">Scenario 2 — As Architect Only</div>
+      <ul style="margin:0;padding-left:18px;font-size:13px;line-height:1.7;color:#2A3142;">
+        <li>Federated model hosted by appointed BIM Coordinator</li>
+        <li>Architect runs detection only on <strong>AR-involving pairs</strong></li>
+        <li>Accountability sits with the appointed lead</li>
+        <li>Architect attends coordination &amp; closes own items</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Assumptions -->
+  <div style="background:#FEF6E7;border:1px solid #F0D48A;border-radius:7px;padding:12px 16px;display:flex;gap:10px;align-items:flex-start;margin-bottom:36px;">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style="flex-shrink:0;margin-top:1px;"><circle cx="9" cy="9" r="8" fill="#C07A10"></circle><path d="M9 5v5" stroke="white" stroke-width="1.2" stroke-linecap="round"></path><circle cx="9" cy="13" r="0.8" fill="white"></circle></svg>
+    <div style="font-size:13px;line-height:1.7;color:#7A4A10;">
+      <strong>Assumptions:</strong> Generic building project — discipline list to be trimmed per project scope. Tolerances are indicative — align to the project BEP and authority requirements. Matrix is symmetric; only the upper-right triangle is populated.
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="display:flex;align-items:center;justify-content:space-between;padding-top:20px;border-top:1px solid #E0E3EC;">
+    <span style="font-size:12px;color:#8A9AB5;">Hopkins Architects Dubai Limited · BIM Standards Library</span>
+    <span style="font-size:12px;color:#8A9AB5;">Clash Coordination Matrix · Version 1.0</span>
+  </div>
+
+</main>
+
+</x-dc>
+</body>
+</html>

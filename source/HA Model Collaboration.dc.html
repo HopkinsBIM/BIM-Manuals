@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<template id="__bundler_thumbnail" data-bg-color="#2A3142">
+  <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="600" fill="#2A3142"></rect>
+    <circle cx="250" cy="280" r="80" fill="none" stroke="#2568B8" stroke-width="3"></circle>
+    <circle cx="400" cy="280" r="80" fill="none" stroke="#1F7A3B" stroke-width="3"></circle>
+    <circle cx="550" cy="280" r="80" fill="none" stroke="#C07A10" stroke-width="3"></circle>
+    <text x="400" y="430" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="22" font-family="sans-serif">Model Collaboration Manual</text>
+  </svg>
+</template>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: #DDE4ED; font-family: 'Source Sans 3', sans-serif; }
+    .doc { max-width: 8.5in; margin: 0 auto; background: #fff; padding: 48px clamp(24px,5vw,0.75in) 72px; }
+    h1,h2,h3,h4 { font-family: 'Montserrat',sans-serif; text-wrap: balance; margin: 0; }
+    p, li { text-wrap: pretty; }
+    a { color: #2568B8; }
+    a:hover { color: #2A3142; }
+    @media print {
+      html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      body { background: #fff; margin: 0; padding: 0; }
+      .doc { max-width: none; margin: 0; padding: 0.75in; box-shadow: none; }
+      h1,h2,h3,h4 { break-after: avoid; }
+    }
+  </style>
+</helmet>
+
+<!-- ═══════════ COVER PAGE ═══════════ -->
+<div style="min-height:100vh; background:#1B3558; display:flex; flex-direction:column; position:relative; overflow:hidden; font-family:'Montserrat',sans-serif; page-break-after:always;">
+
+  <!-- Blueprint grid background -->
+  <svg style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.07;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+        <path d="M 48 0 L 0 0 0 48" fill="none" stroke="white" stroke-width="0.6"></path>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+  </svg>
+
+  <!-- Decorative rings -->
+  <svg style="position:absolute;top:-100px;right:-100px;width:480px;height:480px;opacity:0.12;" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="240" cy="240" r="220" fill="none" stroke="#4A90D9" stroke-width="1"></circle>
+    <circle cx="240" cy="240" r="160" fill="none" stroke="#4A90D9" stroke-width="0.8"></circle>
+    <circle cx="240" cy="240" r="100" fill="none" stroke="#4A90D9" stroke-width="0.6"></circle>
+    <circle cx="240" cy="240" r="40" fill="none" stroke="#4A90D9" stroke-width="0.5"></circle>
+    <line x1="20" y1="240" x2="460" y2="240" stroke="#4A90D9" stroke-width="0.4"></line>
+    <line x1="240" y1="20" x2="240" y2="460" stroke="#4A90D9" stroke-width="0.4"></line>
+  </svg>
+
+  <!-- Top bar -->
+  <div style="padding:36px 60px;display:flex;justify-content:space-between;align-items:center;z-index:1;">
+    <img src="uploads/Hopkins Architects Right Aligned_White.png" alt="Hopkins Architects" style="height:46px;">
+    <span style="color:rgba(255,255,255,0.35);font-size:11px;letter-spacing:1px;">Internal Document · BIM Standards</span>
+  </div>
+
+  <!-- Main content -->
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:40px 60px 56px;z-index:1;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:28px;">
+      <div style="width:36px;height:2px;background:#2568B8;"></div>
+      <span style="color:#7EB8E8;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;">BIM Team · Collaboration</span>
+    </div>
+    <h1 style="color:#fff;font-size:44px;font-weight:800;line-height:1.13;margin:0 0 22px;max-width:620px;">BIM Model<br>Collaboration Manual</h1>
+    <p style="color:#A8C8E8;font-size:16px;line-height:1.65;margin:0 0 44px;max-width:520px;font-weight:400;">How our design team exchanges and coordinates<br>models across every discipline</p>
+    <div style="width:56px;height:3px;background:#2568B8;border-radius:2px;margin-bottom:52px;"></div>
+    <div style="display:flex;gap:52px;flex-wrap:wrap;">
+      <div>
+        <div style="color:rgba(255,255,255,0.38);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Prepared By</div>
+        <div style="color:#fff;font-size:15px;font-weight:500;">Lead Design Consultant</div>
+      </div>
+      <div>
+        <div style="color:rgba(255,255,255,0.38);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Date</div>
+        <div style="color:#fff;font-size:15px;font-weight:500;">July 2026</div>
+      </div>
+      <div>
+        <div style="color:rgba(255,255,255,0.38);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;">Version History</div>
+        <div style="color:#fff;font-size:15px;font-weight:500;">Version 1.0</div>
+      </div>
+    </div>
+
+    <!-- Revision History -->
+    <div style="margin-top:28px;border-radius:6px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);">
+      <div style="background:rgba(255,255,255,0.08);padding:8px 16px;">
+        <span style="font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.4);letter-spacing:1.5px;text-transform:uppercase;">Version History</span>
+      </div>
+      <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(255,255,255,0.05);">
+        <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Ver</div>
+        <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Date</div>
+        <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Description</div>
+        <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Status</div>
+      </div>
+      <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(37,104,184,0.15);">
+        <div style="padding:7px 12px;font-size:12px;font-weight:700;color:#7EB8E8;">1.0</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.7);">Jul 2026</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.7);">Initial release — BIM Model Collaboration Manual</div>
+        <div style="padding:7px 12px;display:flex;align-items:center;gap:6px;"><div style="width:6px;height:6px;background:#4ADE80;border-radius:50%;"></div><span style="font-size:11px;font-weight:600;color:#4ADE80;">Current</span></div>
+      </div>
+      <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(0,0,0,0.1);border-top:1px solid rgba(255,255,255,0.05);">
+        <div style="padding:7px 12px;font-size:12px;font-weight:700;color:rgba(255,255,255,0.3);">—</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.3);">—</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.3);">Draft</div>
+        <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.25);">Superseded</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Revit 2026 notice -->
+  <div style="background:rgba(37,104,184,0.22);border-top:1px solid rgba(126,184,232,0.3);padding:12px 60px;z-index:1;display:flex;align-items:center;gap:12px;font-family:'Montserrat',sans-serif;">
+    <span style="flex-shrink:0;color:#1B3558;background:#7EB8E8;font-size:9.5px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border-radius:3px;">Notice</span>
+    <span style="color:#fff;font-size:12.5px;font-weight:500;line-height:1.5;">With effect from 15 Oct 2026 All new projects shall be initiated in Revit 2026 unless there is Client requirement to use older versions.</span>
+  </div>
+
+  <!-- Bottom strip -->
+  <div style="background:rgba(0,0,0,0.2);padding:14px 60px;z-index:1;display:flex;align-items:center;gap:12px;">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="7" height="7" rx="1" fill="#2568B8"></rect><rect x="10" y="1" width="7" height="7" rx="1" fill="#2568B8" opacity="0.5"></rect><rect x="1" y="10" width="7" height="7" rx="1" fill="#2568B8" opacity="0.5"></rect><rect x="10" y="10" width="7" height="7" rx="1" fill="#2568B8" opacity="0.3"></rect></svg>
+    <span style="color:rgba(255,255,255,0.35);font-size:11px;">Hopkins Architects Dubai Limited · BIM Standards Library</span>
+  </div>
+</div>
+
+<!-- ═══════════ BODY ═══════════ -->
+<main class="doc" style="font-size:15px;line-height:1.7;color:#2A3142;">
+
+  <!-- How to use this manual -->
+  <div style="background:#EBF4FF;border:1px solid #B8D4F0;border-radius:8px;padding:20px 24px;margin-bottom:36px;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="#2568B8"></circle><path d="M10 6v5" stroke="white" stroke-width="1.5" stroke-linecap="round"></path><circle cx="10" cy="14" r="1" fill="white"></circle></svg>
+      <span style="font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;color:#1B3558;text-transform:uppercase;letter-spacing:1px;">How to use this manual</span>
+    </div>
+    <ol style="margin:0;padding-left:20px;font-size:14px;line-height:1.8;color:#2A3142;">
+      <li>Read the <strong>principles</strong> in section 1 — they are the ideas everything else rests on.</li>
+      <li>Find your <strong>role</strong> in section 2 so you know what you are responsible for.</li>
+      <li>Follow the <strong>weekly cycle</strong> in section 5 — this is the core routine.</li>
+      <li>Keep the <strong>pre-publish checklist</strong> in section 8 somewhere visible.</li>
+    </ol>
+  </div>
+
+  <!-- ══ Section 1: Purpose & Principles ══ -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 20px;">01 — Purpose &amp; Coordination Principles</div>
+
+  <p style="margin:0 0 16px;">This manual explains how we author, exchange, and coordinate BIM models across every discipline. It exists so that architects, engineers, and the wider design team all work to one shared rhythm and one source of truth.</p>
+  <p style="margin:0 0 28px;">Follow it and coordination stays predictable: fewer clashes, less rework, and no unpleasant surprises before a deadline.</p>
+
+  <h3 style="font-size:16px;font-weight:700;color:#1B3558;margin:0 0 14px;">Four non-negotiable principles</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:36px;">
+    <div style="background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:18px 20px;border-left:4px solid #2568B8;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#2568B8;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Single source of truth</div>
+      <p style="font-size:14px;line-height:1.65;color:#2A3142;margin:0;">All models live in the Common Data Environment (CDE). Never email models around or keep private copies to share.</p>
+    </div>
+    <div style="background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:18px 20px;border-left:4px solid #2568B8;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#2568B8;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Coordinate early &amp; often</div>
+      <p style="font-size:14px;line-height:1.65;color:#2A3142;margin:0;">We federate weekly, not at the end of a stage. A steadily falling clash count beats a last-minute scramble.</p>
+    </div>
+    <div style="background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:18px 20px;border-left:4px solid #2568B8;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#2568B8;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Publish only what is checked</div>
+      <p style="font-size:14px;line-height:1.65;color:#2A3142;margin:0;">A broken model harms everyone downstream. You are the gatekeeper for your own model.</p>
+    </div>
+    <div style="background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:18px 20px;border-left:4px solid #2568B8;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#2568B8;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">One rhythm</div>
+      <p style="font-size:14px;line-height:1.65;color:#2A3142;margin:0;">The weekly publish cutoff is fixed. We work to the rhythm; the rhythm does not wait for anyone.</p>
+    </div>
+  </div>
+
+  <!-- ══ Section 2: Roles & Responsibilities ══ -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 20px;">02 — Roles &amp; Responsibilities</div>
+
+  <p style="margin:0 0 16px;">Clear ownership matters more than any tool.</p>
+  <div style="border:1px solid #D6DDE8;border-radius:8px;overflow:hidden;margin-bottom:36px;">
+    <div style="display:grid;grid-template-columns:220px 1fr;background:#1B3558;">
+      <div style="padding:10px 16px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Role</div>
+      <div style="padding:10px 16px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Responsible for</div>
+    </div>
+    <div style="display:grid;grid-template-columns:220px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">BIM Manager</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">Owns this manual and the BIM Execution Plan, the CDE structure, and the modelling and naming standards — and makes sure they are followed.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:220px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">BIM Managers / Coordinator</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">Combines (federates) the models each week, runs clash detection, keeps the issue register, and chairs the coordination meeting.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:220px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">BIM Leads - Associates / Architects&nbsp;</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">Accountable for their model's health, publishing on time, and closing the issues assigned to them.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:220px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">Design Leads - Associates Directors</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">Make the design decisions when a clash needs a genuine design change rather than a modelling fix.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:220px 1fr;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">Authors- Architects</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">Produce and maintain the model content to the agreed standard and level of detail.</div>
+    </div>
+  </div>
+
+  <!-- ══ Section 3: The CDE ══ -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 20px;">03 — Where Models Live: the CDE</div>
+
+  <p style="margin:0 0 16px;">The Common Data Environment - Autodesk Forma is the single online home for every model and drawing. Each model moves through four states so everyone always knows what is trustworthy.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px;">
+    <div style="background:#FEF6E7;border:1px solid #F0D48A;border-radius:8px;padding:16px;text-align:center;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#C07A10;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Work in Progress</div>
+      <p style="font-size:13px;line-height:1.5;color:#7A4A10;margin:0;">Your team's live working model, still being developed.</p>
+    </div>
+    <div style="background:#EBF4FF;border:1px solid #B8D4F0;border-radius:8px;padding:16px;text-align:center;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#2568B8;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Shared</div>
+      <p style="font-size:13px;line-height:1.5;color:#2A3142;margin:0;">A checked model published for coordination.</p>
+    </div>
+    <div style="background:#E8F5EC;border:1px solid #A3D9B1;border-radius:8px;padding:16px;text-align:center;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#1F7A3B;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Published</div>
+      <p style="font-size:13px;line-height:1.5;color:#2A3142;margin:0;">Authorised and formally issued information.</p>
+    </div>
+    <div style="background:#F4F4F6;border:1px solid #D0D0D6;border-radius:8px;padding:16px;text-align:center;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#666;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Archived</div>
+      <p style="font-size:13px;line-height:1.5;color:#555;margin:0;">Superseded versions kept for the record.</p>
+    </div>
+  </div>
+
+  <div style="background:#FEF6E7;border:1px solid #F0D48A;border-radius:7px;padding:12px 16px;display:flex;gap:10px;align-items:flex-start;margin-bottom:36px;">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style="flex-shrink:0;margin-top:1px;"><circle cx="9" cy="9" r="8" fill="#C07A10"></circle><path d="M9 5v5" stroke="white" stroke-width="1.2" stroke-linecap="round"></path><circle cx="9" cy="13" r="0.8" fill="white"></circle></svg>
+    <p style="font-size:13px;line-height:1.7;color:#7A4A10;margin:0;">Everyone uses the same platform, and it is the <strong>only route</strong> for exchanging models — no side channels.</p>
+  </div>
+
+  <!-- ══ Section 4: Setting up your model ══ -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 20px;">04 — Setting Up Your Model</div>
+
+  <p style="margin:0 0 16px;">Get these right at the start or coordination will fight you every week.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:36px;">
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:14px 18px;">
+      <div style="min-width:28px;height:28px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#fff;">1</div>
+      <div><strong style="color:#2A3142;">Shared coordinates.</strong> Everyone uses the agreed project origin, base point, and true north. Mismatched coordinates are the single biggest cause of federation problems.</div>
+    </div>
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:14px 18px;">
+      <div style="min-width:28px;height:28px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#fff;">2</div>
+      <div><strong style="color:#2A3142;">Consistent units</strong> across all authoring tools.</div>
+    </div>
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:14px 18px;">
+      <div style="min-width:28px;height:28px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#fff;">3</div>
+      <div><strong style="color:#2A3142;">Model splitting.</strong> One model per discipline; on large projects, also split by zone or level to keep files fast.</div>
+    </div>
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:14px 18px;">
+      <div style="min-width:28px;height:28px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#fff;">4</div>
+      <div><strong style="color:#2A3142;">Naming.</strong> Follow the naming convention for every file, so models are easy to find and versions never get confused.</div>
+    </div>
+    <div style="display:flex;gap:14px;align-items:flex-start;background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:14px 18px;">
+      <div style="min-width:28px;height:28px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#fff;">5</div>
+      <div><strong style="color:#2A3142;">Level of information need.</strong> Model to the agreed level of detail for the current design stage — no more, no less.</div>
+    </div>
+  </div>
+
+  <!-- ══ Section 5: Weekly Coordination Cycle ══ -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 20px;">05 — The Weekly Coordination Cycle</div>
+
+  <p style="margin:0 0 16px;">This is the heart of how we work: a weekly model exchange turned into a reliable routine. The publish cutoff is fixed (e.g. every Tuesday at 12:00).</p>
+
+  <div style="border:1px solid #D6DDE8;border-radius:8px;overflow:hidden;margin-bottom:16px;">
+    <div style="display:grid;grid-template-columns:130px 1fr 180px;background:#1B3558;">
+      <div style="padding:10px 16px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">When</div>
+      <div style="padding:10px 16px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">What happens</div>
+      <div style="padding:10px 16px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Who</div>
+    </div>
+    <div style="display:grid;grid-template-columns:130px 1fr 180px;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">Mon – Tue AM</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">Author and refine your model in Work in Progress. Run your pre-publish checks.</div>
+      <div style="padding:12px 16px;font-size:14px;color:#666;">Discipline teams</div>
+    </div>
+    <div style="display:grid;grid-template-columns:130px 1fr 180px;border-bottom:1px solid #E8EBF0;background:#EBF4FF;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:700;color:#2568B8;background:rgba(37,104,184,0.08);">Tue 12:00 ⏱</div>
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;">Publish your checked model to Shared — native format plus IFC.</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2568B8;font-weight:600;">Discipline BIM leads</div>
+    </div>
+    <div style="display:grid;grid-template-columns:130px 1fr 180px;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">Tue PM</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">Combine all models into one federated model and run clash detection using the clash matrix.</div>
+      <div style="padding:12px 16px;font-size:14px;color:#666;">BIM Coordinator</div>
+    </div>
+    <div style="display:grid;grid-template-columns:130px 1fr 180px;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">Wed</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">Turn significant clashes into issues (BCF) and assign them to the responsible discipline.</div>
+      <div style="padding:12px 16px;font-size:14px;color:#666;">BIM Coordinator</div>
+    </div>
+    <div style="display:grid;grid-template-columns:130px 1fr 180px;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">Thu</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">Coordination meeting: review the federated model and open issues; agree owners and deadlines.</div>
+      <div style="padding:12px 16px;font-size:14px;color:#666;">All disciplines</div>
+    </div>
+    <div style="display:grid;grid-template-columns:130px 1fr 180px;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">Fri</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">Resolve assigned issues back in Work in Progress, ready for the next cycle.</div>
+      <div style="padding:12px 16px;font-size:14px;color:#666;">Discipline teams</div>
+    </div>
+  </div>
+
+  <div style="background:#E8F5EC;border:1px solid #A3D9B1;border-radius:7px;padding:12px 16px;display:flex;gap:10px;align-items:flex-start;margin-bottom:36px;">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style="flex-shrink:0;margin-top:1px;"><circle cx="9" cy="9" r="8" fill="#1F7A3B"></circle><path d="M6 9l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <p style="font-size:13px;line-height:1.7;color:#2A3142;margin:0;">The cutoff does not move. Teams work to the rhythm rather than the rhythm bending to whoever is running late.</p>
+  </div>
+
+  <!-- ══ Section 6: Clash Detection ══ -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 20px;">06 — Clash Detection &amp; Issues</div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px;">
+    <div style="background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:18px 20px;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#1B3558;margin-bottom:8px;">Clash matrix</div>
+      <p style="font-size:14px;line-height:1.65;color:#2A3142;margin:0;">We only test the discipline combinations that matter — e.g. structure against building services — so we are not buried in irrelevant clashes.</p>
+    </div>
+    <div style="background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:18px 20px;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#1B3558;margin-bottom:8px;">Tolerances</div>
+      <p style="font-size:14px;line-height:1.65;color:#2A3142;margin:0;">Hard clashes (physical overlap) and clearance clashes (not enough access space) each have agreed thresholds to filter out noise.</p>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px;">
+    <div style="background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:18px 20px;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#1B3558;margin-bottom:8px;">Priorities</div>
+      <p style="font-size:14px;line-height:1.65;color:#2A3142;margin:0;">We fix design-significant clashes first, not tiny modelling noise.</p>
+    </div>
+    <div style="background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:18px 20px;">
+      <div style="font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;color:#1B3558;margin-bottom:8px;">Issue format</div>
+      <p style="font-size:14px;line-height:1.65;color:#2A3142;margin:0;">Issues travel as BCF, so teams on different software can send and receive them. Every issue sits in one register with an owner, status, and due date.</p>
+    </div>
+  </div>
+
+  <div style="height:1px;background:#E0E3EC;margin:28px 0 36px;"></div>
+
+  <!-- ══ Section 7: File Formats ══ -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 20px;">07 — File Formats at a Glance</div>
+
+  <div style="border:1px solid #D6DDE8;border-radius:8px;overflow:hidden;margin-bottom:36px;">
+    <div style="display:grid;grid-template-columns:160px 1fr;background:#1B3558;">
+      <div style="padding:10px 16px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Format</div>
+      <div style="padding:10px 16px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">What we use it for</div>
+    </div>
+    <div style="display:grid;grid-template-columns:160px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">Native (e.g. .rvt)</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">Working and authoring within the same platform.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:160px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">IFC</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">The neutral, tool-independent format for exchanging models between disciplines. Always published alongside the native model.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:160px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">NWC / NWD</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">Federation and clash detection (when Navisworks is the coordination engine).</div>
+    </div>
+    <div style="display:grid;grid-template-columns:160px 1fr;">
+      <div style="padding:12px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">BCF</div>
+      <div style="padding:12px 16px;font-size:14px;color:#2A3142;">Exchanging coordination issues between different software.</div>
+    </div>
+  </div>
+
+  <!-- ══ Section 8: Pre-publish Checklist ══ -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 20px;">08 — Before You Publish: the Checklist</div>
+
+  <p style="margin:0 0 14px;">Run through this every time before moving your model to Shared.</p>
+  <div style="background:#F4F7FB;border:1px solid #D6DDE8;border-radius:8px;padding:20px 24px;margin-bottom:36px;">
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:22px;height:22px;border:2px solid #2568B8;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6l2 2 4-4" stroke="#2568B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+        <span style="font-size:14px;color:#2A3142;">Model purged and cleaned — no critical warnings or errors.</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:22px;height:22px;border:2px solid #2568B8;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6l2 2 4-4" stroke="#2568B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+        <span style="font-size:14px;color:#2A3142;">Correct shared coordinates, origin, and units.</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:22px;height:22px;border:2px solid #2568B8;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6l2 2 4-4" stroke="#2568B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+        <span style="font-size:14px;color:#2A3142;">Named per the agreed convention.</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:22px;height:22px;border:2px solid #2568B8;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6l2 2 4-4" stroke="#2568B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+        <span style="font-size:14px;color:#2A3142;">Modelled to the agreed level of detail for this stage.</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:22px;height:22px;border:2px solid #2568B8;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6l2 2 4-4" stroke="#2568B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+        <span style="font-size:14px;color:#2A3142;">Native and IFC exported with the agreed settings.</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:22px;height:22px;border:2px solid #2568B8;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6l2 2 4-4" stroke="#2568B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+        <span style="font-size:14px;color:#2A3142;">Uploaded to Shared before the cutoff time.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ Section 9: Glossary ══ -->
+  <div style="display:inline-block;font-family:'Montserrat',sans-serif;font-size:13.5px;font-weight:800;color:#1B3558;letter-spacing:0.5px;text-transform:uppercase;background:#E0E3EC;border:1px solid #9AA3B8;border-radius:2px;padding:10px 18px;margin:0 0 20px;">09 — Glossary</div>
+
+  <div style="border:1px solid #D6DDE8;border-radius:8px;overflow:hidden;margin-bottom:36px;">
+    <div style="display:grid;grid-template-columns:240px 1fr;background:#1B3558;">
+      <div style="padding:10px 16px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Term</div>
+      <div style="padding:10px 16px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;">Meaning</div>
+    </div>
+    <div style="display:grid;grid-template-columns:240px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:10px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">BIM</div>
+      <div style="padding:10px 16px;font-size:14px;color:#2A3142;">Building Information Modelling.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:240px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:10px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">CDE</div>
+      <div style="padding:10px 16px;font-size:14px;color:#2A3142;">Common Data Environment — the single online home for all models and information.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:240px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:10px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">WIP / Shared / Published / Archived</div>
+      <div style="padding:10px 16px;font-size:14px;color:#2A3142;">The states a model moves through in the CDE.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:240px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:10px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">Federated model</div>
+      <div style="padding:10px 16px;font-size:14px;color:#2A3142;">All discipline models combined into one coordinated view.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:240px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:10px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">Clash detection</div>
+      <div style="padding:10px 16px;font-size:14px;color:#2A3142;">Automatically finding where elements overlap or lack clearance.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:240px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:10px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">Clash matrix</div>
+      <div style="padding:10px 16px;font-size:14px;color:#2A3142;">The grid defining which disciplines are checked against which.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:240px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:10px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">BCF</div>
+      <div style="padding:10px 16px;font-size:14px;color:#2A3142;">BIM Collaboration Format — an open way to exchange coordination issues between different software.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:240px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:10px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">IFC</div>
+      <div style="padding:10px 16px;font-size:14px;color:#2A3142;">Industry Foundation Classes — a neutral, tool-independent model format.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:240px 1fr;border-bottom:1px solid #E8EBF0;">
+      <div style="padding:10px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">LOIN / LOD</div>
+      <div style="padding:10px 16px;font-size:14px;color:#2A3142;">Level of Information Need / Level of Detail — how much detail a model carries at each stage.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:240px 1fr;">
+      <div style="padding:10px 16px;font-size:14px;font-weight:600;color:#1B3558;background:#F8F9FB;">Origin / base point</div>
+      <div style="padding:10px 16px;font-size:14px;color:#2A3142;">The agreed reference point that keeps all models aligned.</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="display:flex;align-items:center;justify-content:space-between;padding-top:20px;border-top:1px solid #E0E3EC;">
+    <span style="font-size:12px;color:#8A9AB5;">Hopkins Architects Dubai Limited · BIM Standards Library</span>
+    <span style="font-size:12px;color:#8A9AB5;">BIM Model Collaboration Manual · Version 1.0</span>
+  </div>
+
+</main>
+
+</x-dc>
+</body>
+</html>

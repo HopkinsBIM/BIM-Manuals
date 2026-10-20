@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#2A3142">
+  <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="600" fill="#2A3142"/>
+    <rect x="80" y="220" width="48" height="4" rx="2" fill="#2568B8"/>
+    <rect x="80" y="248" width="320" height="22" rx="3" fill="white" opacity="0.9"/>
+    <rect x="80" y="280" width="240" height="16" rx="3" fill="white" opacity="0.6"/>
+    <circle cx="660" cy="120" r="90" fill="none" stroke="#4A90D9" stroke-width="1" opacity="0.2"/>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: #DDE4ED; font-family: 'Source Sans 3', sans-serif; }
+    .doc { max-width: 8.5in; margin: 0 auto; background: #fff; }
+    h1,h2,h3,h4 { font-family: 'Montserrat',sans-serif; text-wrap: balance; margin: 0; }
+    p, li { text-wrap: pretty; }
+    .section { padding: 36px clamp(20px,5vw,0.75in); border-bottom: 1px solid #EDF1F7; }
+    .section:last-child { border-bottom: none; }
+    code { font-family: 'Courier New', monospace; font-size: 12.5px; background: #EEF3FA; padding: 2px 7px; border-radius: 4px; color: #2A3142; }
+    @media print {
+      html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      body { background: #fff; }
+      .doc { max-width: none; margin: 0; box-shadow: none; }
+      .section { padding: 28px 0.75in; }
+      h1,h2,h3,h4 { break-after: avoid; }
+      .step-row { break-inside: avoid; }
+    }
+  </style>
+</helmet>
+
+<!-- COVER -->
+<div style="min-height:100vh;background:#1B3558;display:flex;flex-direction:column;position:relative;overflow:hidden;font-family:'Montserrat',sans-serif;">
+  <svg style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.06;pointer-events:none;" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="g" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M 48 0 L 0 0 0 48" fill="none" stroke="white" stroke-width="0.6"/></pattern></defs><rect width="100%" height="100%" fill="url(#g)"/></svg>
+  <svg style="position:absolute;right:-80px;top:-80px;width:400px;height:400px;opacity:0.1;pointer-events:none;" viewBox="0 0 400 400"><circle cx="200" cy="200" r="180" fill="none" stroke="#4A90D9" stroke-width="1"/><circle cx="200" cy="200" r="120" fill="none" stroke="#4A90D9" stroke-width="0.8"/><circle cx="200" cy="200" r="60" fill="none" stroke="#4A90D9" stroke-width="0.6"/><line x1="20" y1="200" x2="380" y2="200" stroke="#4A90D9" stroke-width="0.4"/><line x1="200" y1="20" x2="200" y2="380" stroke="#4A90D9" stroke-width="0.4"/></svg>
+  <div style="padding:36px 60px;display:flex;justify-content:space-between;align-items:center;z-index:1;">
+    <img src="uploads/Hopkins Architects Right Aligned_White.png" alt="Hopkins Architects" style="height:46px;"/>
+    <span style="color:rgba(255,255,255,0.35);font-size:11px;letter-spacing:1px;">Internal Document · BIM Standards</span>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:40px 60px 56px;z-index:1;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;"><div style="width:32px;height:2px;background:#2568B8;border-radius:1px;"></div><span style="color:#7EB8E8;font-size:10.5px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;">BIM Standards · Areas &amp; Colour</span></div>
+    <div style="margin-bottom:28px;">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><rect width="56" height="56" rx="12" fill="rgba(37,104,184,0.3)"/>
+        <rect x="10" y="10" width="16" height="16" rx="2" fill="#7EB8E8" opacity="0.7"/>
+        <rect x="30" y="10" width="16" height="16" rx="2" fill="#7EB8E8" opacity="0.4"/>
+        <rect x="10" y="30" width="16" height="16" rx="2" fill="#7EB8E8" opacity="0.4"/>
+        <rect x="30" y="30" width="16" height="16" rx="2" fill="#7EB8E8" opacity="0.6"/>
+      </svg>
+    </div>
+    <h1 style="color:#fff;font-size:42px;font-weight:800;line-height:1.13;margin:0 0 18px;max-width:560px;">Creating Areas, Area Plans<br>&amp; Colour Schemes</h1>
+    <p style="color:#B3B4B4;font-size:15px;line-height:1.65;margin:0 0 40px;max-width:500px;">Setting up Area Schemes, creating Area Plans (GFA, BUA, NIA, GIA), drawing area boundaries, and producing colour-coded plans for issue.</p>
+    <div style="width:52px;height:3px;background:#2568B8;border-radius:2px;margin-bottom:44px;"></div>
+    <div style="display:flex;gap:48px;flex-wrap:wrap;">
+      <div><div style="color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:5px;">Prepared By</div><div style="color:#fff;font-size:14px;font-weight:500;">Prashanth Perumal</div></div>
+      <div><div style="color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:5px;">Date</div><div style="color:#fff;font-size:14px;font-weight:500;">June 2026</div></div>
+      <div><div style="color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:5px;">Version History</div><div style="color:#fff;font-size:14px;font-weight:500;">Version 1.0</div></div>
+    </div>
+
+<!-- Revision History -->
+  <div style="margin-top:28px;border-radius:6px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);">
+    <div style="background:rgba(255,255,255,0.08);padding:8px 16px;">
+      <span style="font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.4);letter-spacing:1.5px;text-transform:uppercase;">Version History</span>
+    </div>
+    <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(255,255,255,0.05);">
+      <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Ver</div>
+      <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Date</div>
+      <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Description</div>
+      <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Status</div>
+    </div>
+    <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(37,104,184,0.15);">
+      <div style="padding:7px 12px;font-size:12px;font-weight:700;color:#7EB8E8;">1.0</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.7);">Jun 2026</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.7);">Initial release — Areas, Area Plans & Colour Schemes</div>
+      <div style="padding:7px 12px;display:flex;align-items:center;gap:6px;"><div style="width:6px;height:6px;background:#4ADE80;border-radius:50%;"></div><span style="font-size:11px;font-weight:600;color:#4ADE80;">Current</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(0,0,0,0.1);border-top:1px solid rgba(255,255,255,0.05);">
+      <div style="padding:7px 12px;font-size:12px;font-weight:700;color:rgba(255,255,255,0.3);">—</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.3);">—</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.3);">Draft</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.25);">Superseded</div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Revit 2026 notice -->
+  <div style="background:rgba(37,104,184,0.22);border-top:1px solid rgba(126,184,232,0.3);padding:12px 60px;z-index:1;display:flex;align-items:center;gap:12px;font-family:'Montserrat',sans-serif;">
+    <span style="flex-shrink:0;color:#1B3558;background:#7EB8E8;font-size:9.5px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border-radius:3px;">Notice</span>
+    <span style="color:#fff;font-size:12.5px;font-weight:500;line-height:1.5;">With effect from 15 Oct 2026 All new projects shall be initiated in Revit 2026 unless there is Client requirement to use older versions.</span>
+  </div>
+
+  <div style="background:rgba(0,0,0,0.2);padding:14px 60px;z-index:1;display:flex;align-items:center;gap:12px;">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="7" height="7" rx="1" fill="#2568B8"/><rect x="10" y="1" width="7" height="7" rx="1" fill="#2568B8" opacity="0.5"/><rect x="1" y="10" width="7" height="7" rx="1" fill="#2568B8" opacity="0.5"/><rect x="10" y="10" width="7" height="7" rx="1" fill="#2568B8" opacity="0.3"/></svg>
+    <span style="color:rgba(255,255,255,0.35);font-size:11px;">Hopkins Architects Dubai Limited · BIM Standards Library</span>
+  </div>
+</div>
+
+<main class="doc">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:16px clamp(20px,5vw,0.75in);border-bottom:2px solid #2A3142;">
+    <span style="font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#1B3558;letter-spacing:1.5px;text-transform:uppercase;">Areas, Area Plans &amp; Colour Schemes</span>
+    <span style="font-family:'Montserrat',sans-serif;font-size:10.5px;color:#827C78;">Prashanth Perumal · Version 1.0 · June 2026</span>
+  </div>
+
+  <!-- Intro -->
+  <div class="section">
+    <div style="background:#EEF3FA;border-left:4px solid #2568B8;border-radius:0 8px 8px 0;padding:16px 20px;">
+      <p style="font-size:14.5px;line-height:1.7;color:#1B2E45;margin:0;">Area Plans in Revit are separate from Rooms — they measure space at the floor level using boundary lines you draw, and they belong to a named <strong>Area Scheme</strong> (e.g. GFA, BUA, NSA, NIA, GIA). Colour Schemes are then applied to plans to visually communicate zoning, department, occupancy or any other parameter.</p>
+    </div>
+  </div>
+
+  <!-- Section 1: Area Schemes -->
+  <div class="section">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">1</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">Creating a New Area Scheme</h2>
+    </div>
+    <div style="background:#FFF8EE;border:1px solid #E8C870;border-radius:7px;padding:12px 16px;margin-bottom:16px;display:flex;gap:9px;">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;margin-top:1px;"><circle cx="8" cy="8" r="7.5" fill="#C07A10"/><rect x="7.1" y="3.5" width="1.8" height="5.5" rx="0.9" fill="white"/><rect x="7.1" y="11" width="1.8" height="1.8" rx="0.9" fill="white"/></svg>
+      <p style="font-size:13px;line-height:1.65;color:#7A4A10;margin:0;"><strong>Create the scheme before drawing any area plans</strong> — each area plan is tied to a single scheme and cannot be changed after creation. Revit ships with two defaults: Gross Building and Rentable.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;flex-direction:column;">
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">1</span></div>
+          <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Go to <strong>Architecture tab → Area panel → Area drop-down → Area and Volume Computations</strong>.</p>
+        </div>
+        <div style="margin-left:36px;">
+          <div style="border:2px solid #2568B8;border-radius:7px;overflow:hidden;width:60%;">
+            <img src="uploads/pasted-1782295611053-0.png" alt="Room &amp; Area panel — Area drop-down showing Color Schemes and Area and Volume Computations" style="width:100%;display:block;"/>
+          </div>
+          <p style="font-size:11px;color:#8A9AB5;margin:5px 0 0;font-style:italic;">Architecture tab → Room &amp; Area panel → Area drop-down → Area and Volume Computations</p>
+        </div>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">2</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Switch to the <strong>Area Schemes tab</strong>.</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;flex-direction:column;">
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">3</span></div>
+          <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Click <strong>New</strong> to add a scheme. Name it using the Hopkins convention: <code>HAD_NIA</code>, <code>HAD_GIA</code>, <code>HAD_Departmental</code>. Add a short description so other users understand its purpose.</p>
+        </div>
+        <div style="margin-left:36px;">
+          <div style="border:2px solid #2568B8;border-radius:7px;overflow:hidden;width:80%;">
+            <img src="uploads/pasted-1782295616506-0.png" alt="Area and Volume Computations — Area Schemes tab showing HAD_Area_BUA, HAD_Area_GFA, HAD_Area_NSA" style="width:100%;display:block;"/>
+          </div>
+          <p style="font-size:11px;color:#8A9AB5;margin:5px 0 0;font-style:italic;">Area Schemes tab — Click New, name using HAD_ prefix, add description. Do not edit the default Gross Building scheme.</p>
+        </div>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F2FBF4;border:1.5px solid #1F7A3B;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#1F7A3B;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">4</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2A3142;margin:0;">Click <strong>OK</strong> to save. The scheme is now available when creating Area Plans. <em>Do not edit or delete the default Gross Building scheme.</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Area Plans -->
+  <div class="section">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">2</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">Creating Area Plans</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">1</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Go to <strong>Architecture tab → Area panel → Area Plan</strong>.</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">2</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">In the New Area Plan dialog, choose the <strong>Area Scheme</strong> (e.g. HAD_GFA) and select the level(s). Hold Ctrl to select multiple levels — Revit creates one Area Plan per level.</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">3</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">When prompted to auto-create boundary lines: choose <strong>Yes</strong> for Gross schemes (external wall face) and <strong>No</strong> for other schemes (draw manually to internal face).</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">4</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">New Area Plans appear under <strong>Views → Area Plans → [Scheme Name]</strong>. Rename them to match the project's view naming convention.</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;flex-direction:column;">
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">5</span></div>
+          <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Draw area boundaries using <strong>Architecture → Area panel → Area Boundary</strong>. Boundaries must form <strong>fully closed loops</strong> — gaps cause "Area Not Enclosed" warnings.</p>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start;margin-left:36px;">
+          <div style="display:flex;gap:10px;">
+            <div style="border:2px solid #2568B8;border-radius:7px;overflow:hidden;">
+              <img src="uploads/pasted-1782295620434-0.png" alt="Area, Area Boundary and Tag Area buttons in ribbon" style="height:90px;display:block;"/>
+            </div>
+          </div>
+          <p style="font-size:11px;color:#8A9AB5;font-style:italic;margin:0;align-self:flex-end;">Area panel — Area (place), Area Boundary (draw), Tag Area</p>
+        </div>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">6</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Place areas using <strong>Architecture → Area panel → Area</strong>. One area per enclosed boundary. <strong>Rename each area immediately</strong> — do not leave them as "Area 1", "Area 2".</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F2FBF4;border:1.5px solid #1F7A3B;border-radius:8px;padding:13px 16px;flex-direction:column;">
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <div style="width:24px;height:24px;background:#1F7A3B;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">7</span></div>
+          <p style="font-size:13.5px;line-height:1.65;color:#2A3142;margin:0;">Tag areas using <strong>Annotate → Tag by Category</strong> or the Area Tag family directly. Tags display Area Name, Number, and Area value as standard.</p>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start;margin-left:36px;">
+          <div style="border:2px solid #1F7A3B;border-radius:7px;overflow:hidden;">
+            <img src="uploads/pasted-1782295628761-0.png" alt="Tag by Category and Tag All buttons" style="height:90px;display:block;"/>
+          </div>
+          <p style="font-size:11px;color:#8A9AB5;font-style:italic;margin:0;align-self:flex-end;">Annotate → Tag by Category (single) · Tag All (all untagged)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3: Colour Schemes -->
+  <div class="section">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">3</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">Creating &amp; Applying Colour Schemes</h2>
+    </div>
+    <p style="font-size:14.5px;line-height:1.7;color:#2C3E50;margin:0 0 16px;">Colour Schemes visually code rooms or areas by any parameter (Name, Number, Comments etc.). They live in the project file and can be applied to multiple views. <strong>Each view can carry only one colour scheme per category.</strong></p>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;flex-direction:column;">
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">1</span></div>
+          <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">With the target plan view active, go to the <strong>Properties palette → Color Scheme → Edit</strong>.</p>
+        </div>
+        <div style="margin-left:36px;">
+          <div style="border:2px solid #2568B8;border-radius:7px;overflow:hidden;width:45%;">
+            <img src="uploads/pasted-1782295632807-0.png" alt="Properties palette showing Color Scheme field on an Area Plan" style="width:100%;display:block;"/>
+          </div>
+          <p style="font-size:11px;color:#8A9AB5;margin:5px 0 0;font-style:italic;">Properties palette → Color Scheme row — click the value field to open the Edit Color Scheme dialog</p>
+        </div>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">2</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">In the Edit Color Scheme dialog, choose the <strong>Category</strong> (Rooms or Areas — Areas are further split by scheme, e.g. "Areas (HAD_NIA)").</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#FFF8EE;border:1px solid #E8C870;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#C07A10;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">3</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#7A4A10;margin:0;">Click the <strong>Duplicate icon</strong> (bottom-left) to copy the default "Schema 1" and rename it (e.g. "HAD_GFA", "HAD_BUA"). <strong>Never edit the default schema directly.</strong></p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">4</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Set the <strong>Colour By</strong> parameter — the parameter that drives the colour fill. Common choices are Name or Number.</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">5</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Choose <strong>By Value</strong> (one colour per unique value) or <strong>By Range</strong> (colour bands for numeric values like Area). For categorical data always use By Value.</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">6</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Set Visible, Color, and Fill Pattern per row. <strong>Use the office colour palette</strong> — do not pick arbitrary RGB values.</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">7</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Click OK. Add a <strong>Colour Scheme Legend</strong> via <strong>Annotate → Color Fill Legend</strong> so the reader can interpret the colours.</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F2FBF4;border:1.5px solid #1F7A3B;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#1F7A3B;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">8</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2A3142;margin:0;">To reuse a colour scheme on another view, set the <strong>Color Scheme property</strong> on that view to the same named schema — do not duplicate and re-edit.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Do's & Don'ts -->
+  <div class="section">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">4</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">Do's &amp; Don'ts</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#1F7A3B;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;display:flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" fill="#1F7A3B"/><path d="M3.5 7l2.5 2.5L10.5 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Do's</div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Create the Area Scheme before drawing any area plans — schemes cannot be swapped on an existing plan without redrawing.</div>
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Name schemes, area plans and colour schemes using the <code style="font-size:11.5px;">HAD_</code> prefix so they're easy to identify in the Project Browser.</div>
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Draw area boundaries as fully closed loops; use Trim/Extend to clean up intersections. Do not overlap boundaries.</div>
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Use Gross schemes for external-face measurements and Net schemes for internal-face — keep them in separate area plans, never mix.</div>
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Duplicate the default Schema 1 before editing — the original stays clean as a fallback.</div>
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Add a Colour Scheme Legend to every colour-filled plan on a sheet — without it the reader cannot interpret the colours.</div>
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Audit area plans regularly using an Area Schedule to catch Not Enclosed or Redundant areas — delete them from the schedule.</div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#C52E24;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;display:flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" fill="#C52E24"/><line x1="4.5" y1="4.5" x2="9.5" y2="9.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="9.5" y1="4.5" x2="4.5" y2="9.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg> Don'ts</div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't draw area boundaries on top of room separation lines — they serve different purposes and clutter the model.</div>
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't use Rooms when Areas are required (and vice versa). Rooms = enclosed volumes from walls; Areas = 2D extents from boundary lines.</div>
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't apply more than one colour scheme of the same category to a view — Revit only honours one Room scheme and one Area scheme per view.</div>
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't pick arbitrary RGB values for colour fills — always use the office colour palette for consistency across projects.</div>
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't edit the default Schema 1 — duplicate it first, otherwise other users opening the model lose their fallback.</div>
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't bake colours into the legend by manually overriding tag colours — let the colour scheme drive everything so updates propagate automatically.</div>
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't export coloured plans to PDF and re-colour in Illustrator — always update colours at source in Revit so the model remains the single source of truth.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="background:#1B3558;padding:20px clamp(20px,5vw,0.75in);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+    <img src="uploads/Hopkins Architects Right Aligned_White.png" alt="Hopkins Architects" style="height:20px;opacity:0.6;"/>
+    <span style="font-family:'Montserrat',sans-serif;font-size:11px;color:rgba(255,255,255,0.3);">Areas, Area Plans &amp; Colour Schemes · Version A · Internal Use Only</span>
+  </div>
+
+</main>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#2A3142">
+  <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="600" fill="#2A3142"/>
+    <rect x="80" y="220" width="48" height="4" rx="2" fill="#2568B8"/>
+    <rect x="80" y="248" width="320" height="22" rx="3" fill="white" opacity="0.9"/>
+    <rect x="80" y="280" width="240" height="16" rx="3" fill="white" opacity="0.6"/>
+    <circle cx="660" cy="120" r="90" fill="none" stroke="#4A90D9" stroke-width="1" opacity="0.2"/>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: #DDE4ED; font-family: 'Source Sans 3', sans-serif; }
+    .doc { max-width: 8.5in; margin: 0 auto; background: #fff; }
+    h1,h2,h3,h4 { font-family: 'Montserrat',sans-serif; text-wrap: balance; margin: 0; }
+    p, li { text-wrap: pretty; }
+    .section { padding: 36px clamp(20px,5vw,0.75in); border-bottom: 1px solid #EDF1F7; }
+    .section:last-child { border-bottom: none; }
+    code { font-family: 'Courier New', monospace; font-size: 12.5px; background: #EEF3FA; padding: 2px 7px; border-radius: 4px; color: #2A3142; }
+    @media print {
+      html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      body { background: #fff; }
+      .doc { max-width: none; margin: 0; box-shadow: none; }
+      .section { padding: 28px 0.75in; }
+      h1,h2,h3,h4 { break-after: avoid; }
+      .step-row { break-inside: avoid; }
+    }
+  </style>
+</helmet>
+
+<!-- COVER -->
+<div style="min-height:100vh;background:#1B3558;display:flex;flex-direction:column;position:relative;overflow:hidden;font-family:'Montserrat',sans-serif;">
+  <svg style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.06;pointer-events:none;" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="g" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M 48 0 L 0 0 0 48" fill="none" stroke="white" stroke-width="0.6"/></pattern></defs><rect width="100%" height="100%" fill="url(#g)"/></svg>
+  <svg style="position:absolute;right:-80px;top:-80px;width:400px;height:400px;opacity:0.1;pointer-events:none;" viewBox="0 0 400 400"><circle cx="200" cy="200" r="180" fill="none" stroke="#4A90D9" stroke-width="1"/><circle cx="200" cy="200" r="120" fill="none" stroke="#4A90D9" stroke-width="0.8"/><circle cx="200" cy="200" r="60" fill="none" stroke="#4A90D9" stroke-width="0.6"/><line x1="20" y1="200" x2="380" y2="200" stroke="#4A90D9" stroke-width="0.4"/><line x1="200" y1="20" x2="200" y2="380" stroke="#4A90D9" stroke-width="0.4"/></svg>
+  <div style="padding:36px 60px;display:flex;justify-content:space-between;align-items:center;z-index:1;">
+    <img src="uploads/Hopkins Architects Right Aligned_White.png" alt="Hopkins Architects" style="height:46px;"/>
+    <span style="color:rgba(255,255,255,0.35);font-size:11px;letter-spacing:1px;">Internal Document · BIM Standards</span>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:40px 60px 56px;z-index:1;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;"><div style="width:32px;height:2px;background:#2568B8;border-radius:1px;"></div><span style="color:#7EB8E8;font-size:10.5px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;">BIM Standards · Rooms &amp; Data</span></div>
+    <div style="margin-bottom:28px;">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><rect width="56" height="56" rx="12" fill="rgba(37,104,184,0.3)"/>
+        <rect x="10" y="12" width="36" height="32" rx="3" fill="none" stroke="#7EB8E8" stroke-width="1.5"/>
+        <rect x="16" y="20" width="10" height="10" rx="1.5" fill="#7EB8E8" opacity="0.6"/>
+        <rect x="30" y="20" width="10" height="10" rx="1.5" fill="#7EB8E8" opacity="0.4"/>
+        <rect x="16" y="34" width="10" height="4" rx="1" fill="#7EB8E8" opacity="0.3"/>
+        <rect x="30" y="34" width="10" height="4" rx="1" fill="#7EB8E8" opacity="0.3"/>
+      </svg>
+    </div>
+    <h1 style="color:#fff;font-size:42px;font-weight:800;line-height:1.13;margin:0 0 18px;max-width:560px;">Creating Rooms &amp;<br>Managing Room Data Sheets</h1>
+    <p style="color:#B3B4B4;font-size:15px;line-height:1.65;margin:0 0 40px;max-width:500px;">How to place rooms cleanly, tag them correctly, populate Room Data Sheet parameters, and produce reliable RDS output in Revit.</p>
+    <div style="width:52px;height:3px;background:#2568B8;border-radius:2px;margin-bottom:44px;"></div>
+    <div style="display:flex;gap:48px;flex-wrap:wrap;">
+      <div><div style="color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:5px;">Prepared By</div><div style="color:#fff;font-size:14px;font-weight:500;">Prashanth Perumal</div></div>
+      <div><div style="color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:5px;">Date</div><div style="color:#fff;font-size:14px;font-weight:500;">June 2026</div></div>
+      <div><div style="color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:5px;">Version History</div><div style="color:#fff;font-size:14px;font-weight:500;">Version 1.0</div></div>
+    </div>
+
+<!-- Revision History -->
+  <div style="margin-top:28px;border-radius:6px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);">
+    <div style="background:rgba(255,255,255,0.08);padding:8px 16px;">
+      <span style="font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.4);letter-spacing:1.5px;text-transform:uppercase;">Version History</span>
+    </div>
+    <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(255,255,255,0.05);">
+      <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Ver</div>
+      <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Date</div>
+      <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Description</div>
+      <div style="padding:6px 12px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.08);">Status</div>
+    </div>
+    <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(37,104,184,0.15);">
+      <div style="padding:7px 12px;font-size:12px;font-weight:700;color:#7EB8E8;">1.0</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.7);">Jun 2026</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.7);">Initial release — Rooms & Room Data Sheets Guide</div>
+      <div style="padding:7px 12px;display:flex;align-items:center;gap:6px;"><div style="width:6px;height:6px;background:#4ADE80;border-radius:50%;"></div><span style="font-size:11px;font-weight:600;color:#4ADE80;">Current</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:50px 90px 1fr 140px;background:rgba(0,0,0,0.1);border-top:1px solid rgba(255,255,255,0.05);">
+      <div style="padding:7px 12px;font-size:12px;font-weight:700;color:rgba(255,255,255,0.3);">—</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.3);">—</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.3);">Draft</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.25);">Superseded</div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Revit 2026 notice -->
+  <div style="background:rgba(37,104,184,0.22);border-top:1px solid rgba(126,184,232,0.3);padding:12px 60px;z-index:1;display:flex;align-items:center;gap:12px;font-family:'Montserrat',sans-serif;">
+    <span style="flex-shrink:0;color:#1B3558;background:#7EB8E8;font-size:9.5px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border-radius:3px;">Notice</span>
+    <span style="color:#fff;font-size:12.5px;font-weight:500;line-height:1.5;">With effect from 15 Oct 2026 All new projects shall be initiated in Revit 2026 unless there is Client requirement to use older versions.</span>
+  </div>
+
+  <div style="background:rgba(0,0,0,0.2);padding:14px 60px;z-index:1;display:flex;align-items:center;gap:12px;">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="7" height="7" rx="1" fill="#2568B8"/><rect x="10" y="1" width="7" height="7" rx="1" fill="#2568B8" opacity="0.5"/><rect x="1" y="10" width="7" height="7" rx="1" fill="#2568B8" opacity="0.5"/><rect x="10" y="10" width="7" height="7" rx="1" fill="#2568B8" opacity="0.3"/></svg>
+    <span style="color:rgba(255,255,255,0.35);font-size:11px;">Hopkins Architects Dubai Limited · BIM Standards Library</span>
+  </div>
+</div>
+
+<main class="doc">
+
+  <!-- Running header -->
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:16px clamp(20px,5vw,0.75in);border-bottom:2px solid #2A3142;">
+    <span style="font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#1B3558;letter-spacing:1.5px;text-transform:uppercase;">Creating Rooms &amp; Room Data Sheets</span>
+    <span style="font-family:'Montserrat',sans-serif;font-size:10.5px;color:#827C78;">Prashanth Perumal · Version 1.0 · June 2026</span>
+  </div>
+
+  <!-- Intro -->
+  <div class="section">
+    <div style="background:#EEF3FA;border-left:4px solid #2568B8;border-radius:0 8px 8px 0;padding:16px 20px;">
+      <p style="font-size:14.5px;line-height:1.7;color:#1B2E45;margin:0;">Rooms in Revit are more than coloured zones on a plan — they carry the data that drives schedules, Room Data Sheets (RDS), area calculations, and downstream coordination with MEP and FF&amp;E. This guide covers how to place rooms cleanly, tag them correctly, and produce reliable room data sheets.</p>
+    </div>
+  </div>
+
+  <!-- Section 1: Placing Rooms -->
+  <div class="section">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">1</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">Placing Rooms</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;align-items:flex-start;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">1</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Set the correct workset <code>HAD_Content_ID</code> and the correct <strong>phase</strong> before placing any rooms — rooms placed on the wrong phase will not appear on schedules filtered by phase.</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;flex-direction:column;">
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">2</span></div>
+          <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Open the <strong>Architectural floor plan view</strong> (not a coordination or working view). Go to <strong>Architecture tab → Room &amp; Area panel → Room</strong>.</p>
+        </div>
+        <div style="margin-left:36px;">
+          <div style="border:2px solid #2568B8;border-radius:7px;overflow:hidden;width:75%;">
+            <img src="uploads/pasted-1782295939898-0.png" alt="Room &amp; Area panel showing Room, Room Separator, Tag Room, Area, Area Boundary buttons" style="width:100%;display:block;"/>
+          </div>
+          <p style="font-size:11px;color:#8A9AB5;margin:5px 0 0;font-style:italic;">Architecture tab → Room &amp; Area panel — Room (place), Room Separator (open-plan splits), Tag Room</p>
+        </div>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;align-items:flex-start;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">3</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Ensure room-bounding elements are enabled on walls, floors, ceilings, curtain walls, and roofs. Check the Properties palette for the <strong>"Room Bounding"</strong> tick box on each element.</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;align-items:flex-start;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">4</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Use <strong>Room Separation Lines</strong> (Architecture → Room Separator) only where there is no physical wall — e.g. to split open-plan space into reception, waiting, and circulation zones. These should reside in workset <code>HAD_Content_Room_Seperations</code>.</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;flex-direction:column;">
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">5</span></div>
+          <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Place one room per enclosed space. Set the <strong>Upper Limit</strong> and <strong>Limit Offset</strong> so the room volume reaches the underside of the ceiling or slab above — required for accurate volume and MEP calculations.</p>
+        </div>
+        <div style="margin-left:36px;">
+          <div style="border:2px solid #2568B8;border-radius:7px;overflow:hidden;width:45%;">
+            <img src="uploads/pasted-1782295944191-0.png" alt="Properties palette showing Upper Limit, Limit Offset and room dimensions" style="width:100%;display:block;"/>
+          </div>
+          <p style="font-size:11px;color:#8A9AB5;margin:5px 0 0;font-style:italic;">Properties palette → Constraints — set Upper Limit (level above) and Limit Offset (height to underside of slab)</p>
+        </div>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F2FBF4;border:1.5px solid #1F7A3B;border-radius:8px;padding:13px 16px;align-items:flex-start;">
+        <div style="width:24px;height:24px;background:#1F7A3B;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">6</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2A3142;margin:0;"><strong>Rename the room immediately</strong> on placement. Do not leave rooms as "Room 1", "Room 2" — use the project's room naming convention.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Numbering & Tagging -->
+  <div class="section">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">2</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">Room Numbering &amp; Tagging</h2>
+    </div>
+    <p style="font-size:14.5px;line-height:1.7;color:#2C3E50;margin:0 0 16px;">Room numbers should follow the project's numbering protocol — typically <strong>Level + sequence</strong>. Group numbers logically by zone or department so the schedule reads in a sensible order.</p>
+    <div style="background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:16px 18px;margin-bottom:12px;">
+      <p style="font-size:14px;line-height:1.68;color:#2C3E50;margin:0;">Tag every room using the project's standard Room Tag family. Use <strong>Annotate → Tag All</strong> to catch any untagged rooms in a view. Tags should display <strong>Number and Name</strong> as a minimum; area tags can be applied separately where required.</p>
+    </div>
+    <div style="background:#EEF3FA;border:1px solid #C5D6EA;border-radius:7px;padding:12px 16px;display:flex;gap:12px;align-items:flex-start;">
+      <div style="border:2px solid #2568B8;border-radius:6px;overflow:hidden;flex-shrink:0;">
+        <img src="uploads/pasted-1782295957448-0.png" alt="Tag by Category and Tag All buttons" style="height:72px;display:block;"/>
+      </div>
+      <p style="font-size:13px;line-height:1.65;color:#1B2E45;margin:0;"><strong>Annotate tab → Tag panel:</strong> Use <strong>Tag by Category</strong> for individual tags, or <strong>Tag All</strong> to catch every untagged room in a view at once.</p>
+    </div>
+  </div>
+
+  <!-- Section 3: Room Data Sheets -->
+  <div class="section">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">3</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">Producing Room Data Sheets</h2>
+    </div>
+    <p style="font-size:14.5px;line-height:1.7;color:#2C3E50;margin:0 0 18px;">An RDS is a schedule of room properties (finishes, occupancy, services, equipment). It is driven by the room's parameters — <strong>populate the data on the room itself, not on the sheet</strong>.</p>
+    <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:18px;">
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">1</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Confirm all required parameters (Floor Finish, Wall Finish, Ceiling Finish, Occupancy, FF&amp;E Code) are available via <strong>Manage → Project Parameters</strong>, bound to the Rooms category.</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">2</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Populate parameters on each room via the Properties palette, or in bulk through a Room Schedule (<strong>View → Schedules → Schedule/Quantities → Rooms</strong>).</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F7F9FC;border:1px solid #D0DCE8;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#2568B8;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;">3</span></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2C3E50;margin:0;">Place the filtered room schedule on the RDS sheet using the <strong>HAD title block</strong>.</p>
+      </div>
+      <div class="step-row" style="display:flex;gap:12px;background:#F2FBF4;border:1.5px solid #1F7A3B;border-radius:8px;padding:13px 16px;">
+        <div style="width:24px;height:24px;background:#1F7A3B;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5L9 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <p style="font-size:13.5px;line-height:1.65;color:#2A3142;margin:0;">RDS sheets must <strong>remain live</strong> — never export and edit externally. Check that areas, volumes, and finishes update correctly when the room is modified.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Parameter Mapping -->
+  <div class="section">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">4</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">Hopkins Standard Parameter Mapping</h2>
+    </div>
+    <p style="font-size:14.5px;line-height:1.7;color:#2C3E50;margin:0 0 16px;">Use these parameter names when populating room data so schedules, tags, and exports remain consistent across all Hopkins projects.</p>
+    <div style="margin-bottom:16px;">
+      <div style="border:2px solid #2568B8;border-radius:7px;overflow:hidden;width:60%;">
+        <img src="uploads/pasted-1782295961743-0.png" alt="Properties Identity Data panel showing room Number, Name, Occupancy, Department, Base/Ceiling/Wall/Floor Finish" style="width:100%;display:block;"/>
+      </div>
+      <p style="font-size:11px;color:#8A9AB5;margin:5px 0 0;font-style:italic;">Properties palette → Identity Data — populate Number, Name, Occupancy, Department and finish codes directly on the room</p>
+    </div>
+    <div style="border:1px solid #D0DCE8;border-radius:8px;overflow:hidden;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;background:#1B3558;">
+        <div style="padding:10px 16px;font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#B3B4B4;text-transform:uppercase;letter-spacing:0.5px;">Generic RDS Field</div>
+        <div style="padding:10px 16px;font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:700;color:#B3B4B4;text-transform:uppercase;letter-spacing:0.5px;border-left:1px solid rgba(255,255,255,0.1);">Hopkins / Revit Parameter</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #EDF1F7;background:#fff;"><div style="padding:11px 16px;font-size:13.5px;color:#2C3E50;font-weight:600;">Occupancy</div><div style="padding:11px 16px;border-left:1px solid #EDF1F7;"><code>Primary Use</code></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #EDF1F7;background:#F8FAFC;"><div style="padding:11px 16px;font-size:13.5px;color:#2C3E50;font-weight:600;">Department</div><div style="padding:11px 16px;border-left:1px solid #EDF1F7;"><code>Scope Type</code></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #EDF1F7;background:#fff;"><div style="padding:11px 16px;font-size:13.5px;color:#2C3E50;font-weight:600;">Base Finish</div><div style="padding:11px 16px;border-left:1px solid #EDF1F7;"><code>Floor Build-up Code</code></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #EDF1F7;background:#F8FAFC;"><div style="padding:11px 16px;font-size:13.5px;color:#2C3E50;font-weight:600;">Ceiling Finish</div><div style="padding:11px 16px;border-left:1px solid #EDF1F7;"><code>Ceiling Type Code</code></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #EDF1F7;background:#fff;"><div style="padding:11px 16px;font-size:13.5px;color:#2C3E50;font-weight:600;">Wall Finish</div><div style="padding:11px 16px;border-left:1px solid #EDF1F7;"><code>Wall Finish Code / Skirting Code / Dado Code</code></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #EDF1F7;background:#F8FAFC;"><div style="padding:11px 16px;font-size:13.5px;color:#2C3E50;font-weight:600;">Floor Finish</div><div style="padding:11px 16px;border-left:1px solid #EDF1F7;"><code>Floor Finish Code</code></div></div>
+    </div>
+  </div>
+
+  <!-- Section 5: Do's & Don'ts -->
+  <div class="section">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+      <div style="width:34px;height:34px;background:#1B3558;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="color:white;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;">5</span></div>
+      <h2 style="font-size:19px;font-weight:700;color:#1B3558;">Do's &amp; Don'ts</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#1F7A3B;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;display:flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" fill="#1F7A3B"/><path d="M3.5 7l2.5 2.5L10.5 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Do's</div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Place rooms as soon as the architectural layout is firm — early room data drives MEP loads, FF&amp;E budgets, and area schedules.</div>
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Set the Upper Limit and Limit Offset so volumes are accurate to the underside of the slab/ceiling above.</div>
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Keep room names and numbers consistent with the project's room schedule and the client's brief.</div>
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Use Room Separation Lines for open-plan zoning and pin them to avoid accidental movement.</div>
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Run "Tag All Not Tagged" before issue to confirm every room is tagged.</div>
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Audit rooms regularly using a Room Schedule — look for Not Placed, Not Enclosed, and Redundant rooms.</div>
+          <div style="background:#F2FBF4;border:1px solid #C0DEC8;border-radius:6px;padding:10px 12px;font-size:13px;color:#2A3142;line-height:1.55;">Coordinate room numbering with MEP and Structures so the same number is used across all disciplines.</div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#C52E24;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;display:flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" fill="#C52E24"/><line x1="4.5" y1="4.5" x2="9.5" y2="9.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/><line x1="9.5" y1="4.5" x2="4.5" y2="9.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg> Don'ts</div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't place more than one room in the same enclosed space — produces "Redundant Room" warnings and breaks schedules.</div>
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't delete a room from the model to remove it from a schedule — it remains as "Not Placed". Use the Room Schedule to delete it properly.</div>
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't use Room Separation Lines where a wall should exist — it misrepresents the architecture and affects area calculations.</div>
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't override room data on the RDS sheet or in tags — all data must live on the room itself.</div>
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't switch off "Room Bounding" on walls casually — causes rooms to bleed into adjacent spaces and inflates areas.</div>
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't rely on Revit's default room names — always rename to project-specific names.</div>
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't manually type areas or volumes into the RDS — these must be live parameters scheduled from the room.</div>
+          <div style="background:#FEF5F5;border:1px solid #F0C0C0;border-radius:6px;padding:10px 12px;font-size:13px;color:#4A2020;line-height:1.55;">Don't export RDS sheets to CAD or PDF for mark-up and re-import — always update at source in Revit.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="background:#1B3558;padding:20px clamp(20px,5vw,0.75in);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+    <img src="uploads/Hopkins Architects Right Aligned_White.png" alt="Hopkins Architects" style="height:20px;opacity:0.6;"/>
+    <span style="font-family:'Montserrat',sans-serif;font-size:11px;color:rgba(255,255,255,0.3);">Creating Rooms &amp; Room Data Sheets · Version A · Internal Use Only</span>
+  </div>
+
+</main>
+</x-dc>
+</body>
+</html>
